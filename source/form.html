@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Подбор программы</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
 
@@ -26,18 +27,124 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page">
+      <h1 class="page__title title">Подбор программы</h1>
 
-      <h1 class="page-main__title">Подбор программы</h1>
-
-      <section class="page-form">
+      <section class="form">
         <h2 class="visually-hidden">Форма для подбора программы</h2>
-        <!-- форма -->
+        <p class="form__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form  class="form__program" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="info">
+            <legend class="visually-hidden">Данные кота</legend>
+            <ul class="info__list">
+              <li class="info__item">
+                <label class="info__value title-description" for="name">Имя:<sup>*</sup></label>
+                <input class="info__field" type="text" id="name" name="name" required>
+              </li>
+              <li class="info__item">
+                <label class="info__value title-description" for="weight">Вес (кг):<sup>*</sup></label>
+                <input class="info__field" type="text" id="weight" name="weight" required>
+              </li>
+              <li class="info__item">
+                <label class="info__value title-description" for="age">Возраст (лет):</label>
+                <input class="info__field" type="text" id="age" name="age">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="type-program">
+            <legend class="visually-hidden">Вид программы</legend>
+            <ul class="type-program__list">
+              <li class="type-program__item">
+                <label class="type-program__value title-description" for="lose-weight">
+                  <input class="type-program__field" type="radio" id="lose-weight" name="type-program" checked>
+                  <span class="type-program__custom"></span>
+                  Похудение
+                </label>
+              </li>
+              <li class="type-program__item">
+                <label  class="type-program__value title-description" for="gain-weight">
+                  <input class="type-program__field" type="radio" id="gain-weight" name="type-program">
+                  <span class="type-program__custom"></span>
+                  Набор массы
+                </label>
+              </li>
+              <li class="type-program__item">
+                <label  class="type-program__value title-description" for="advice">
+                  <input class="type-program__field" type="radio" id="advice" name="type-program">
+                  <span class="type-program__custom"></span>
+                  Не знаю (Нужен ваш совет)
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="person-contacts">
+            <legend class="person-contacts__title subtitle">Контактные данные (владельца кота)</legend>
+            <p class="person-contacts__email">
+              <label class="person-contacts__value title-description" for="email">E-mail:<sup>*</sup></label>
+              <input class="person-contacts__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <span class="person-contacts__custom"></span>
+            </p>
+            <p class="person-contacts__phone">
+              <label class="person-contacts__value title-description" for="phone">Телефон:<sup>*</sup></label>
+              <input class="person-contacts__field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+              <span class="person-contacts__custom"></span>
+            </p>
+          </fieldset>
+          <fieldset class="comment">
+            <legend class="comment__title subtitle">Комментарий</legend>
+            <textarea class="comment_description title-description" name="comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+          </fieldset>
+          <fieldset class="extra">
+            <legend class="extra__title subtitle">Дополнительно</legend>
+            <ul class="extra__list">
+              <li class="extra__item">
+                <label class="extra__value title-description" for="sweetener">
+                  <input class="extra__field" type="checkbox" id="sweetener" name="sweetener" checked>
+                  <span class="extra__custom"></span>
+                  Сахарозаменитель
+                </label>
+              </li>
+              <li class="extra__item">
+                <label class="extra__value title-description" for="water">
+                  <input class="extra__field" type="checkbox" id="water" name="water">
+                  <span class="extra__custom"></span>
+                  Питьевая вода
+                </label>
+              </li>
+              <li class="extra__item">
+                <label class="extra__value title-description" for="milk">
+                  <input class="extra__field" type="checkbox" id="milk" name="milk">
+                  <span class="extra__custom"></span>
+                  Молоко
+                </label>
+              </li>
+              <li class="extra__item">
+                <label class="extra__value title-description" for="vitamins">
+                  <input class="extra__field" type="checkbox" id="vitamins" name="vitamins">
+                  <span class="extra__custom"></span>
+                  Витамины
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="form__button button" type="submit">Отправить заявку</button>
+          <small class="form__important">
+            <sup>*</sup> — Обязательные поля
+          </small>
+        </form>
       </section>
 
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <!-- карта -->
+        <div class="contacts__details">
+          <p class="contacts__promo title-description">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__text">ул. Большая<br>
+            Конюшенная, д. 19/8<br>
+            Санкт-Петербург</p>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://via.placeholder.com/320x400"></iframe>
+        </div>
       </section>
     </main>
 
