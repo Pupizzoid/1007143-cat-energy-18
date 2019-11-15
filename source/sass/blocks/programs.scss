@@ -1,13 +1,17 @@
 .programs {
-  @include outline;
+  outline: 1px solid red;
 }
 
 .programs__list {
-  @include list;
+  list-style: none;
+  padding: 0;
 }
 
 .programs__description {
-  @include description;
+  font-family: "ArialMT", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $brown;
 }
 
 .programs__link {

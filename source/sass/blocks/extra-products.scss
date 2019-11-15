@@ -1,17 +1,24 @@
 .extra-products {
-  @include outline;
+  outline: 1px solid red;
   padding-top: 31px;
   padding-bottom: 39px;
 }
 
 .extra-products__list {
-  @include list;
+  list-style: none;
+  padding: 0;
 }
 
 .extra-products__value {
-  @include description-3;
+  font-family: "ArialMT", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $brown;
 }
 
 .extra-products__field {
-  @include description-3;
+  font-family: "ArialMT", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $brown;
 }

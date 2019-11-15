@@ -3,8 +3,7 @@
   background-image: url("../img/index-background-mobile1x.jpg");
   background-repeat: no-repeat;
   color: $white;
-
-  @include outline;
+  outline: 1px solid red;
 }
 
 .promo__title {

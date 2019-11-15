@@ -1,14 +1,5 @@
 .page-footer {
   padding-top: 39px;
   padding-bottom: 31px;
-}
-
-.social__list {
-  @include list;
-}
-
-.copyright__text {
-  font-family: "ArialMT", sans-serif;
-  font-size: 16px;
-  color: $brown;
+  outline: 1px solid red;
 }

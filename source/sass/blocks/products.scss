@@ -1,9 +1,10 @@
 .products {
-  @include outline;
+  outline: 1px solid red;
+}
 
-  .products__list {
-    @include list;
-  }
+.products__list {
+  list-style: none;
+  padding: 0;
 }
 
 .products__item {
@@ -12,7 +13,10 @@
 }
 
 .products__table {
-  @include description-2;
+  font-family: "ArialMT", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $brown;
 }
 
 .products__wrapper {
@@ -20,7 +24,10 @@
 }
 
 .products__text {
-  @include description-2;
+  font-family: "ArialMT", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $brown;
 }
 
 .products__link {

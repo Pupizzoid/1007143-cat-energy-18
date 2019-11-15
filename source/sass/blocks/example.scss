@@ -1,5 +1,5 @@
 .example {
-  @include outline;
+  outline: 1px solid red;
   padding-top: 33px;
   padding-bottom: 38px;
 }
@@ -9,7 +9,10 @@
 }
 
 .example__text {
-  @include description;
+  font-family: "ArialMT", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $brown;
 }
 
 .example__price {

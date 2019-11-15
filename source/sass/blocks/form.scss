@@ -1,8 +1,9 @@
 .form {
   padding-bottom: 34px;
+  outline: 1px solid red;
 }
 
-.fieldset-style {
+.field-reset {
   border: 0;
   padding: 0;
 }
@@ -25,13 +26,11 @@
 }
 
 .info__list {
-  @include list;
+  list-style: none;
+  padding: 0;
 }
 
 .type-program__list {
-  @include list;
-}
-
-.extra__list {
-  @include list;
+  list-style: none;
+  padding: 0;
 }
