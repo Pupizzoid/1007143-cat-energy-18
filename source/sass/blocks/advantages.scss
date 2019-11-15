@@ -1,0 +1,10 @@
+.advantages {
+  @include outline;
+  padding-bottom: 42px;
+  padding-top: 32px;
+
+  .advantages__list {
+    @include list;
+    @include description;
+  }
+}

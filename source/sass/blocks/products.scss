@@ -1,0 +1,28 @@
+.products {
+  @include outline;
+
+  .products__list {
+    @include list;
+  }
+}
+
+.products__item {
+  padding: 25px 20px;
+}
+
+.products__table {
+  @include description-2;
+}
+
+.products__wrapper {
+  padding-bottom: 25px;
+
+  .products__text {
+    @include description-2;
+  }
+
+  .products__link {
+    color: $brown;
+    background-color: $grey;
+  }
+}

@@ -1,0 +1,37 @@
+.form {
+  padding-bottom: 34px;
+
+  fieldset {
+    border: 0;
+    padding: 0;
+  }
+
+  .form__intro {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  .form__important {
+    font-family: "ArialMT", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: $brown;
+  }
+
+  .form__button {
+    border: none;
+  }
+}
+
+.info__list {
+  @include list;
+}
+
+.type-program__list {
+  @include list;
+}
+
+.extra__list {
+  @include list;
+}

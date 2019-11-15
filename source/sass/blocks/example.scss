@@ -1,0 +1,36 @@
+.example {
+  @include outline;
+  padding-top: 33px;
+  padding-bottom: 38px;
+
+  .example__title {
+    margin: 0;
+  }
+
+  .example__text {
+    @include description;
+  }
+
+  .example__price {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.example__value {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__field {
+  font-family: "ArialMT", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: $brown;
+}
+
+.example__image {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

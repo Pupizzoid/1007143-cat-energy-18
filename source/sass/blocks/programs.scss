@@ -1,0 +1,15 @@
+.programs__list {
+  @include list;
+  @include outline;
+  padding: 22px 17px;
+}
+
+.programs__description {
+  @include description;
+}
+
+.programs__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}

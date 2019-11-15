@@ -1,0 +1,17 @@
+.extra-products {
+  @include outline;
+  padding-top: 31px;
+  margin-bottom: 39px;
+
+  .extra-products__list {
+    @include list;
+  }
+}
+
+.extra-products__value {
+  @include description-3;
+}
+
+.extra-products__field {
+  @include description-3;
+}
