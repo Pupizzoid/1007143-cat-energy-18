@@ -1,9 +1,9 @@
 .programs {
   @include outline;
+}
 
-  .programs__list {
-    @include list;
-  }
+.programs__list {
+  @include list;
 }
 
 .programs__description {

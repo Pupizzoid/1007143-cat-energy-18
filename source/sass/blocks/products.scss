@@ -17,13 +17,13 @@
 
 .products__wrapper {
   padding-bottom: 25px;
+}
 
-  .products__text {
-    @include description-2;
-  }
+.products__text {
+  @include description-2;
+}
 
-  .products__link {
-    color: $brown;
-    background-color: $grey;
-  }
+.products__link {
+  color: $brown;
+  background-color: $grey;
 }

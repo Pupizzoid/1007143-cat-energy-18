@@ -2,19 +2,19 @@
   @include outline;
   padding-top: 33px;
   padding-bottom: 38px;
+}
 
-  .example__title {
-    margin: 0;
-  }
+.example__title {
+  margin: 0;
+}
 
-  .example__text {
-    @include description;
-  }
+.example__text {
+  @include description;
+}
 
-  .example__price {
-    font-size: 14px;
-    line-height: 20px;
-  }
+.example__price {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .example__value {

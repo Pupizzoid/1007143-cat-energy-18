@@ -2,10 +2,10 @@
   @include outline;
   padding-top: 31px;
   padding-bottom: 39px;
+}
 
-  .extra-products__list {
-    @include list;
-  }
+.extra-products__list {
+  @include list;
 }
 
 .extra-products__value {

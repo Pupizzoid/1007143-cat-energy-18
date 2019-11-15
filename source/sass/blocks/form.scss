@@ -1,27 +1,27 @@
 .form {
   padding-bottom: 34px;
+}
 
-  fieldset {
-    border: 0;
-    padding: 0;
-  }
+.fieldset-style {
+  border: 0;
+  padding: 0;
+}
 
-  .form__intro {
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
+.form__intro {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
 
-  .form__important {
-    font-family: "ArialMT", sans-serif;
-    font-size: 14px;
-    line-height: 16px;
-    color: $brown;
-  }
+.form__important {
+  font-family: "ArialMT", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $brown;
+}
 
-  .form__button {
-    border: none;
-  }
+.form__button {
+  border: none;
 }
 
 .info__list {

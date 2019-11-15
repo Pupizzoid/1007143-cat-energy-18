@@ -1,23 +1,23 @@
 .contacts {
   @include outline;
+}
 
-  .contacts__map {
-    background-image: url("../img/bg-map-mobile@1x.png");
-    background-repeat: no-repeat;
-  }
+.contacts__map {
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
 }
 
 .contacts__details {
   padding-top: 21px;
   padding-bottom: 26px;
+}
 
-  .contacts__promo {
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
+.contacts__promo {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
 
-  .contacts__text {
-    @include description;
-  }
+.contacts__text {
+  @include description;
 }

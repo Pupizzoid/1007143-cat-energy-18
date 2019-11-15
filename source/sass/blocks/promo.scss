@@ -5,19 +5,19 @@
   color: $white;
 
   @include outline;
+}
 
-  .promo__title {
-    font-size: 36px;
-    font-weight: 400;
-  }
+.promo__title {
+  font-size: 36px;
+  font-weight: 400;
+}
 
-  .promo__intro {
-    font-size: 14px;
-    text-transform: uppercase;
-  }
+.promo__intro {
+  font-size: 14px;
+  text-transform: uppercase;
+}
 
-  .promo__link {
-    font-size: 14px;
-    line-height: 18px;
-  }
+.promo__link {
+  font-size: 14px;
+  line-height: 18px;
 }

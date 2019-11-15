@@ -1,10 +1,10 @@
 .stocks {
   @include outline;
   margin-bottom: 35px;
+}
 
-  .stocks__wrapper {
-    font-family: "ArialMT", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-  }
+.stocks__wrapper {
+  font-family: "ArialMT", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
