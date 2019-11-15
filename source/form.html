@@ -13,7 +13,7 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"> Открыть меню</button>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list reset">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
@@ -34,69 +34,69 @@
         <h2 class="visually-hidden">Форма для подбора программы</h2>
         <p class="form__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="form__program" action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset class="info field-reset">
+          <fieldset class="form__info reset">
             <legend class="visually-hidden">Данные кота</legend>
-            <ul class="info__list">
-              <li class="info__item">
-                <label class="info__value title-description" for="name">Имя:<sup>*</sup></label>
-                <input class="info__field" type="text" id="name" name="name" required>
+            <ul class="form__info-list reset">
+              <li class="form__info-item">
+                <label class="form__info-value title-description" for="name">Имя:<sup>*</sup></label>
+                <input class="form__info-field" type="text" id="name" name="name" required>
               </li>
-              <li class="info__item">
-                <label class="info__value title-description" for="weight">Вес (кг):<sup>*</sup></label>
-                <input class="info__field" type="text" id="weight" name="weight" required>
+              <li class="form__info-item">
+                <label class="form__info-value title-description" for="weight">Вес (кг):<sup>*</sup></label>
+                <input class="form__info-field" type="text" id="weight" name="weight" required>
               </li>
-              <li class="info__item">
-                <label class="info__value title-description" for="age">Возраст (лет):</label>
-                <input class="info__field" type="text" id="age" name="age">
+              <li class="form__info-item">
+                <label class="form__info-value title-description" for="age">Возраст (лет):</label>
+                <input class="form__info-field" type="text" id="age" name="age">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="type-program field-reset">
+          <fieldset class="form__type-program reset">
             <legend class="visually-hidden">Вид программы</legend>
-            <ul class="type-program__list">
-              <li class="type-program__item">
-                <label class="type-program__value title-description" for="lose-weight">
-                  <input class="type-program__field" type="radio" id="lose-weight" name="type-program" checked>
-                  <span class="type-program__custom"></span>
+            <ul class="form__program-lis reset">
+              <li class="form__program-item">
+                <label class="form__program-value title-description" for="lose-weight">
+                  <input class="form__program-field" type="radio" id="lose-weight" name="type-program" checked>
+                  <span class="form__program-custom"></span>
                   Похудение
                 </label>
               </li>
-              <li class="type-program__item">
-                <label  class="type-program__value title-description" for="gain-weight">
-                  <input class="type-program__field" type="radio" id="gain-weight" name="type-program">
-                  <span class="type-program__custom"></span>
+              <li class="form__program-item">
+                <label  class="form__program-value title-description" for="gain-weight">
+                  <input class="form__program-field" type="radio" id="gain-weight" name="type-program">
+                  <span class="form__program-custom"></span>
                   Набор массы
                 </label>
               </li>
-              <li class="type-program__item">
-                <label  class="type-program__value title-description" for="advice">
-                  <input class="type-program__field" type="radio" id="advice" name="type-program">
-                  <span class="type-program__custom"></span>
+              <li class="form__program-item">
+                <label  class="form__program-value title-description" for="advice">
+                  <input class="form__program-field" type="radio" id="advice" name="type-program">
+                  <span class="form__program-custom"></span>
                   Не знаю (Нужен ваш совет)
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="person-contacts field-reset">
-            <legend class="person-contacts__title subtitle">Контактные данные (владельца кота)</legend>
-            <p class="person-contacts__email">
-              <label class="person-contacts__value title-description" for="email">E-mail:<sup>*</sup></label>
-              <input class="person-contacts__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-              <span class="person-contacts__custom"></span>
+          <fieldset class="form__contacts reset">
+            <legend class="form__contacts-title subtitle">Контактные данные (владельца кота)</legend>
+            <p class="form__contacts-item">
+              <label class="form__contacts-value title-description" for="email">E-mail:<sup>*</sup></label>
+              <input class="form__contacts-field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <span class="form__contacts-custom"></span>
             </p>
-            <p class="person-contacts__phone">
-              <label class="person-contacts__value title-description" for="phone">Телефон:<sup>*</sup></label>
-              <input class="person-contacts__field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
-              <span class="person-contacts__custom"></span>
+            <p class="form__contacts-item">
+              <label class="form__contacts-value title-description" for="phone">Телефон:<sup>*</sup></label>
+              <input class="form__contacts-field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+              <span class="form__contacts-custom"></span>
             </p>
           </fieldset>
-          <fieldset class="comment field-reset">
-            <legend class="comment__title subtitle">Комментарий</legend>
-            <textarea class="comment_description title-description" name="comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+          <fieldset class="form__comment reset">
+            <legend class="form__comment-title subtitle">Комментарий</legend>
+            <textarea class="form__comment-description title-description" name="comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
           </fieldset>
-          <fieldset class="extra field-reset">
+          <fieldset class="extra reset">
             <legend class="extra__title subtitle">Дополнительно</legend>
-            <ul class="extra__list">
+            <ul class="extra__list reset">
               <li class="extra__item">
                 <label class="extra__value title-description" for="sweetener">
                   <input class="extra__field" type="checkbox" id="sweetener" name="sweetener" checked>
@@ -153,7 +153,7 @@
         <img class="page-footer__logo-image" src="./img/logo-footer.svg" alt="Логотип Кэт энерджи" width="128" height="24">
       </div>
       <div class="page-footer__social social">
-        <ul class="social__list">
+        <ul class="social__list reset">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
           </li>
