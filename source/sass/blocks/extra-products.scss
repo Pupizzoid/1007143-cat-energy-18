@@ -1,7 +1,7 @@
 .extra-products {
   @include outline;
   padding-top: 31px;
-  margin-bottom: 39px;
+  padding-bottom: 39px;
 
   .extra-products__list {
     @include list;

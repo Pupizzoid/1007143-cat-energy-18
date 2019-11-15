@@ -1,7 +1,9 @@
-.programs__list {
-  @include list;
+.programs {
   @include outline;
-  padding: 22px 17px;
+
+  .programs__list {
+    @include list;
+  }
 }
 
 .programs__description {
