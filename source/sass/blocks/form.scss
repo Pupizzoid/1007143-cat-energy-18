@@ -1,0 +1,21 @@
+.form {
+  padding-bottom: 34px;
+  outline: 1px solid red;
+}
+
+.form__intro {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__important {
+  font-family: "ArialMT", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $brown;
+}
+
+.form__button {
+  border: none;
+}

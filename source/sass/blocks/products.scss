@@ -1,0 +1,31 @@
+.products {
+  outline: 1px solid red;
+}
+
+.products__item {
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.products__table {
+  font-family: "ArialMT", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $brown;
+}
+
+.products__wrapper {
+  padding-bottom: 25px;
+}
+
+.products__text {
+  font-family: "ArialMT", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $brown;
+}
+
+.products__link {
+  color: $brown;
+  background-color: $grey;
+}

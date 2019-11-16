@@ -1,3 +1,47 @@
+@import "fonts.scss";
+@import "visually-hidden.scss";
+@import "variables.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/button.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/example.scss";
+@import "./blocks/extra-products.scss";
+@import "./blocks/form.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/products.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/reset.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/stocks.scss";
+@import "./blocks/subtitle.scss";
+@import "./blocks/title-description.scss";
+@import "./blocks/title.scss";
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  background: red;
+  font-family: "Oswald", "Arial", sans-serif;
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+  color: #111111;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
 }

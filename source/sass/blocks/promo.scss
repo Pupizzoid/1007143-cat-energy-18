@@ -1,0 +1,22 @@
+.promo {
+  background-color: $green;
+  background-image: url("../img/index-background-mobile1x.jpg");
+  background-repeat: no-repeat;
+  color: $white;
+  outline: 1px solid red;
+}
+
+.promo__title {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.promo__intro {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.promo__link {
+  font-size: 14px;
+  line-height: 18px;
+}

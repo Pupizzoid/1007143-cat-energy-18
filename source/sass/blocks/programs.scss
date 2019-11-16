@@ -1,0 +1,16 @@
+.programs {
+  outline: 1px solid red;
+}
+
+.programs__description {
+  font-family: "ArialMT", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $brown;
+}
+
+.programs__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
