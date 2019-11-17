@@ -1,0 +1,42 @@
+@media (min-width: $mobile-width) {
+  .section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .extra-products {
+    width: 100%;
+  }
+
+  .stocks {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extra-products {
+    width: 100%;
+  }
+
+  .stocks {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-wrapper {
+    margin-bottom: 86px;
+  }
+
+  .extra-products {
+    width: 70%;
+    margin: 0;
+  }
+
+  .stocks {
+    width: 245px;
+    margin: 0;
+  }
+}

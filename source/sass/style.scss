@@ -6,6 +6,7 @@
 @import "./blocks/contacts.scss";
 @import "./blocks/copyright.scss";
 @import "./blocks/example.scss";
+@import "./blocks/extra.scss";
 @import "./blocks/extra-products.scss";
 @import "./blocks/form.scss";
 @import "./blocks/page-footer.scss";
@@ -19,6 +20,8 @@
 @import "./blocks/subtitle.scss";
 @import "./blocks/title-description.scss";
 @import "./blocks/title.scss";
+@import "./blocks/social.scss";
+@import "./blocks/section-wrapper.scss";
 
 
 html {
@@ -31,6 +34,10 @@ html {
   box-sizing: inherit;
 }
 
+// img {
+//   width: 100%;
+// }
+
 body {
   font-family: "Oswald", "Arial", sans-serif;
   background-color: $white;
@@ -41,7 +48,23 @@ a {
   color: #111111;
 }
 
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
+@media (min-width: $mobile-width) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }

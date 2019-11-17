@@ -1,10 +1,39 @@
 .stocks {
   outline: 1px solid red;
-  margin-bottom: 35px;
 }
 
-.stocks__wrapper {
-  font-family: "ArialMT", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+@media (min-width: $mobile-width) {
+  .stocks {
+    min-height: 289px;
+    margin-bottom: 35px;
+    background: url("../img/gift-photo-mobile1x.jpg") no-repeat center;
+  }
+
+  .stocks__wrapper {
+    font-family: "ArialMT", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .stocks__info {
+    width: 159px;
+    color: $white;
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .stocks {
+    min-height: 200px;
+    margin-bottom: 76px;
+    background: url("../img/gift-photo-tablet1x.jpg") no-repeat center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stocks {
+    min-height: 289px;
+    margin-bottom: 86px;
+    background: url("../img/gift-photo-desktop1x.jpg") no-repeat;
+  }
 }

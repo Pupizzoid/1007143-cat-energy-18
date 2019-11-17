@@ -1,7 +1,15 @@
-.subtitle {
-  font-size: 24px;
-  line-height: 37px;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin: 0;
+@media (min-width: $mobile-width) {
+  .subtitle {
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .subtitle {
+    font-size: 36px;
+  }
 }

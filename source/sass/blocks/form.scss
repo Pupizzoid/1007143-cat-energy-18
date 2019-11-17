@@ -3,19 +3,64 @@
   outline: 1px solid red;
 }
 
-.form__intro {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
+@media (min-width: $mobile-width) {
+  .form__intro {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  .form__important {
+    font-family: "ArialMT", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: $brown;
+  }
+
+  .form__button {
+    border: none;
+  }
 }
 
-.form__important {
-  font-family: "ArialMT", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  color: $brown;
+@media (min-width: $tablet-width) {
+  .form__intro {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__important {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
-.form__button {
-  border: none;
+@media (min-width: $desktop-width) {
+  .form__program {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .form__info {
+    width: 570px;
+  }
+
+  .form__type-program {
+    width: 570px;
+  }
+
+  .form__contacts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__contacts-item {
+    width: 570px;
+  }
+
+  .form__comment {
+    width: 100%;
+  }
 }

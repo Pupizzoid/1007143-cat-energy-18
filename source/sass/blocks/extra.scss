@@ -1,25 +1,24 @@
 @media (min-width: $mobile-width) {
-  .copyright {
+  .extra__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
   }
 
-  .copyright__text {
-    font-family: "ArialMT", sans-serif;
-    font-size: 16px;
-    color: $brown;
+  .extra__item {
+    width: 100%;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .copyright {
-    width: 164px;
+  .extra__item {
+    width: 300px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .copyright {
-    width: 125px;
+  .extra__item {
+    width: 230px;
   }
 }

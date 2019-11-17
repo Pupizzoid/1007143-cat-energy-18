@@ -2,15 +2,56 @@
   outline: 1px solid red;
 }
 
-.programs__description {
-  font-family: "ArialMT", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: $brown;
+@media (min-width: $mobile-width) {
+  .programs__description {
+    font-family: "ArialMT", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: $brown;
+  }
+
+  .programs__link {
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+
+  .programs__item {
+    margin-bottom: 20px;
+    background-color: $grey;
+  }
 }
 
-.programs__link {
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
+@media (min-width: $tablet-width) {
+  .programs__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    width: 570px;
+  }
+
+  .programs__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
