@@ -4,3 +4,7 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  font-size: 20px;
+}

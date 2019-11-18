@@ -4,3 +4,44 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+.site-list__item {
+  text-align: center;
+  margin: 24px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: $black2;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  .site-list__item {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  .site-list__item {
+    margin: 0;
+  }
+
+  .site-list__link {
+    color: $white;
+
+    &--primary {
+      color: $black;
+    }
+  }
+}

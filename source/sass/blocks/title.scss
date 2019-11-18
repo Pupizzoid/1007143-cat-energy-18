@@ -2,5 +2,10 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 60px;
+  }
 }

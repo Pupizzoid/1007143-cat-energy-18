@@ -1,9 +1,8 @@
 .promo {
-  background-color: $green;
-  background-image: url("../img/index-background-mobile1x.jpg");
-  background-repeat: no-repeat;
-  color: $white;
   outline: 1px solid red;
+  background: url("../img/index-background-mobile1x.jpg") no-repeat 100%;
+  background-color: $green;
+  color: $white;
 }
 
 .promo__title {
@@ -19,4 +18,21 @@
 .promo__link {
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background: $white;
+    color: $black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background: url("../img/index-background-desktop1x.jpg") no-repeat 50%;
+    background-position: right;
+    background-color: linear-gradient(to right, $white 50%, $green 50%);
+    margin-top: -151px;
+    padding: 262px;
+  }
 }

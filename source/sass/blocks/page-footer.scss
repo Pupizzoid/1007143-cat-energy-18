@@ -3,3 +3,21 @@
   padding-bottom: 31px;
   outline: 1px solid red;
 }
+
+.page-footer__logo {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 62px;
+  }
+
+  .page-footer__logo {
+    width: 128px;
+  }
+}

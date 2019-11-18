@@ -1,0 +1,9 @@
+.social__list {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    width: 130px;
+  }
+}

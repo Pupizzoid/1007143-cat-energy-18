@@ -1,21 +1,32 @@
 .example {
-  outline: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding-top: 33px;
   padding-bottom: 38px;
+  background: $grey;
+  outline: 1px solid red;
 }
 
 .example__title {
   margin: 0;
+  margin-bottom: 33px;
 }
 
 .example__text {
+  width: 266px;
   font-family: "ArialMT", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $brown;
 }
 
+.example__result {
+  width: 124px;
+}
+
 .example__price {
+  width: 187px;
   font-size: 14px;
   line-height: 20px;
 }
@@ -26,6 +37,7 @@
 }
 
 .example__field {
+  width: 57px;
   font-family: "ArialMT", sans-serif;
   font-size: 12px;
   line-height: 12px;
@@ -33,7 +45,89 @@
 }
 
 .example__image {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example__before {
+  width: 36px;
+}
+
+.example__after {
+  width: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    padding-top: 51px;
+    padding-bottom: 67px;
+    background: linear-gradient(to bottom, $grey 50%, $white 50%);
+  }
+
+  .example__title {
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  .example__text {
+    width: 674px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__result {
+    width: 162px;
+  }
+
+  .example__price {
+    width: 205px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__field {
+    width: 57px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__image {
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__before {
+    width: 46px;
+  }
+
+  .example__after {
+    width: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    padding-top: 90px;
+    padding-bottom: 67px;
+  }
+
+  .example__title {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 142px;
+  }
+
+  .example__text {
+    width: 430px;
+  }
 }
