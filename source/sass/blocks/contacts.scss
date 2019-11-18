@@ -2,43 +2,39 @@
   outline: 1px solid red;
 }
 
-@media (min-width: $mobile-width) {
-  .contacts__details {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 21px;
-    padding-bottom: 26px;
-    background: $grey;
+.contacts__details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 21px;
+  padding-bottom: 26px;
+  background: $grey;
 
-    &--white {
-      background: $white;
-    }
+  &--primary {
+    background: $white;
   }
+}
 
-  .contacts__promo {
-    width: 123px;
-    margin: 0;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
+.contacts__promo {
+  width: 123px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
 
-  .contacts__text {
-    width: 134px;
-    margin: 0;
-    font-family: "ArialMT", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    color: $brown;
-  }
+.contacts__text {
+  width: 134px;
+  margin: 0;
+  font-family: "ArialMT", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $brown;
+}
 
-  .contacts__map {
-    width: 100%;
-    min-height: 380px;
-    background-image: url("../img/bg-map-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
+.contacts__map {
+  width: 100%;
+  min-height: 380px;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -64,9 +60,7 @@
   .contacts__map {
     width: 100%;
     min-height: 400px;
-    background-image: url("../img/bg-map-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: url("../img/bg-map-tablet@1x.png") no-repeat 100%;
   }
 }
 
@@ -85,8 +79,6 @@
   .contacts__map {
     width: 100%;
     min-height: 400px;
-    background-image: url("../img/bg-map-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: url("../img/bg-map-desktop@1x.png") no-repeat 100%;
   }
 }

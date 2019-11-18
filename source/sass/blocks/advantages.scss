@@ -1,22 +1,17 @@
 .advantages {
   outline: 1px solid red;
+  padding-top: 32px;
 }
 
-@media (min-width: $mobile-width) {
-  .advantages {
-    padding-top: 32px;
-  }
+.advantages__list {
+  font-size: 14px;
+  line-height: 18px;
+  color: $brown;
+  font-family: "ArialMT", sans-serif;
+}
 
-  .advantages__list {
-    font-size: 14px;
-    line-height: 18px;
-    color: $brown;
-    font-family: "ArialMT", sans-serif;
-  }
-
-  .advantages__item {
-    width: 192px;
-  }
+.advantages__item {
+  width: 192px;
 }
 
 @media (min-width: $tablet-width) {

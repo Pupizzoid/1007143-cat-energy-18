@@ -21,7 +21,7 @@
 @import "./blocks/title-description.scss";
 @import "./blocks/title.scss";
 @import "./blocks/social.scss";
-@import "./blocks/section-wrapper.scss";
+@import "./blocks/products-wrapper.scss";
 
 
 html {
@@ -34,13 +34,17 @@ html {
   box-sizing: inherit;
 }
 
-// img {
-//   width: 100%;
-// }
+img {
+  width: 100%;
+  height: auto;
+}
 
 body {
   font-family: "Oswald", "Arial", sans-serif;
   background-color: $white;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -48,17 +52,20 @@ a {
   color: #111111;
 }
 
-@media (min-width: $mobile-width) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .container {
     padding-left: 30px;
     padding-right: 30px;
+
+    &--secondary {
+      padding-left: 71px;
+      padding-right: 67px;
+    }
   }
 }
 
@@ -66,5 +73,10 @@ a {
   .container {
     padding-left: 110px;
     padding-right: 110px;
+
+    &--secondary {
+      padding-left: 113px;
+      padding-right: 110px;
+    }
   }
 }

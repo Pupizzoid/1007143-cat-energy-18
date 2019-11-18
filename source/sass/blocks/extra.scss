@@ -1,24 +1,48 @@
-@media (min-width: $mobile-width) {
-  .extra__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-  }
+.extra {
+  width: 100%;
+}
 
-  .extra__item {
-    width: 100%;
-  }
+.extra__title {
+  margin-bottom: 32px;
+}
+
+.extra__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.extra__item {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
+  .extra {
+    margin-bottom: 6px;
+  }
+
   .extra__item {
     width: 300px;
+    margin-bottom: 32px;
+  }
+
+  .extra__title {
+    margin-bottom: 31px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .extra {
+    margin-bottom: 29px;
+  }
+
   .extra__item {
     width: 230px;
+  }
+
+  .extra__title {
+    margin-bottom: 64px;
   }
 }

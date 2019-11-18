@@ -2,34 +2,32 @@
   outline: 1px solid red;
 }
 
-@media (min-width: $mobile-width) {
-  .products__item {
-    padding-bottom: 25px;
-    padding-top: 25px;
-  }
+.products__item {
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
 
-  .products__table {
-    font-family: "ArialMT", sans-serif;
-    font-size: 12px;
-    line-height: 16px;
+.products__table {
+  font-family: "ArialMT", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $brown;
+}
+
+.products__text {
+  font-family: "ArialMT", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $brown;
+}
+
+.products__link {
+  color: $white;
+  background-color: $green;
+
+  &--all {
+    background-color: $grey;
     color: $brown;
-  }
-
-  .products__text {
-    font-family: "ArialMT", sans-serif;
-    font-size: 12px;
-    line-height: 16px;
-    color: $brown;
-  }
-
-  .products__link {
-    color: $white;
-    background-color: $green;
-
-    &--all {
-      background-color: $grey;
-      color: $brown;
-    }
   }
 }
 

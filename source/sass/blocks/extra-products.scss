@@ -2,6 +2,7 @@
   outline: 1px solid red;
   padding-top: 31px;
   padding-bottom: 39px;
+  width: 100%;
 }
 
 .extra-products__value {
@@ -16,4 +17,11 @@
   font-size: 14px;
   line-height: 14px;
   color: $brown;
+}
+
+@media (min-width: $desktop-width) {
+  .extra-products {
+    width: 70%;
+    margin: 0;
+  }
 }

@@ -2,24 +2,22 @@
   outline: 1px solid red;
 }
 
-@media (min-width: $mobile-width) {
-  .programs__description {
-    font-family: "ArialMT", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    color: $brown;
-  }
+.programs__description {
+  font-family: "ArialMT", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $brown;
+}
 
-  .programs__link {
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-  }
+.programs__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
 
-  .programs__item {
-    margin-bottom: 20px;
-    background-color: $grey;
-  }
+.programs__item {
+  margin-bottom: 20px;
+  background-color: $grey;
 }
 
 @media (min-width: $tablet-width) {

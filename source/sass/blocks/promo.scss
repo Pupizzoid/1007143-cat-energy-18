@@ -1,5 +1,8 @@
 .promo {
   outline: 1px solid red;
+  background: url("../img/index-background-mobile1x.jpg") no-repeat 100%;
+  background-color: $green;
+  color: $white;
 }
 
 .promo__title {
@@ -17,16 +20,6 @@
   line-height: 18px;
 }
 
-@media (min-width: $mobile-width) {
-  .promo {
-    background-color: $green;
-    background-image: url("../img/index-background-mobile1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    color: $white;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .promo {
     background: $white;
@@ -39,7 +32,6 @@
     background: url("../img/index-background-desktop1x.jpg") no-repeat 50%;
     background-position: right;
     background-color: linear-gradient(to right, $white 50%, $green 50%);
-    color: $black;
     margin-top: -151px;
     padding: 262px;
   }

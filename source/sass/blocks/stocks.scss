@@ -1,29 +1,27 @@
 .stocks {
+  min-height: 289px;
+  margin-bottom: 35px;
+  background: url("../img/gift-photo-mobile1x.jpg") no-repeat center;
+  width: 100%;
   outline: 1px solid red;
 }
 
-@media (min-width: $mobile-width) {
-  .stocks {
-    min-height: 289px;
-    margin-bottom: 35px;
-    background: url("../img/gift-photo-mobile1x.jpg") no-repeat center;
-  }
+.stocks__wrapper {
+  font-family: "ArialMT", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
 
-  .stocks__wrapper {
-    font-family: "ArialMT", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .stocks__info {
-    width: 159px;
-    color: $white;
-    text-align: center;
-  }
+.stocks__info {
+  width: 159px;
+  color: $white;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .stocks {
+    width: 245px;
+    margin: 0;
     min-height: 200px;
     margin-bottom: 76px;
     background: url("../img/gift-photo-tablet1x.jpg") no-repeat center;

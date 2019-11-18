@@ -1,27 +1,22 @@
 .page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   outline: 1px solid red;
 }
 
-@media (min-width: $mobile-width) {
-  .page-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+.page-header__logo-image {
+  height: 39px;
+  width: 191px;
+}
 
-  .page-header__logo-image {
-    height: 39px;
-    width: 191px;
-  }
+.page-header__toggle {
+  display: block;
+  width: 25px;
+}
 
-  .page-header__toggle {
-    display: block;
-    width: 25px;
-  }
-
-  .main-nav {
-    width: 100%;
-  }
+.main-nav {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {

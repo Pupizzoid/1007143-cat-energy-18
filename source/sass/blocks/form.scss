@@ -3,34 +3,172 @@
   outline: 1px solid red;
 }
 
-@media (min-width: $mobile-width) {
-  .form__intro {
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
+.form__intro {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 227px;
+}
+
+.form__info-item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.form__info-field {
+  flex-grow: 1;
+}
+
+.form__info-value {
+  &--first {
+    width: 33px;
+    margin-right: 12px;
   }
 
-  .form__important {
-    font-family: "ArialMT", sans-serif;
-    font-size: 14px;
-    line-height: 16px;
-    color: $brown;
+  &--second {
+    width: 59px;
+    margin-right: 12px;
   }
 
-  .form__button {
-    border: none;
+  &--third {
+    width: 100px;
+    margin-right: 12px;
   }
+}
+
+.form__type-program {
+  margin-bottom: 31px;
+}
+
+.form__program-item {
+  margin-bottom: 14px;
+}
+
+.form__contacts-title {
+  margin-bottom: 30px;
+}
+
+.form__contacts {
+  margin-bottom: 31px;
+  width: 100%;
+}
+
+.form__contacts-item {
+  display: flex;
+}
+
+.form__contacts-value {
+  &--first {
+    width: 50px;
+    margin-right: 12px;
+  }
+
+  &--second {
+    width: 67px;
+    margin-right: 12px;
+  }
+}
+
+.form__contacts-field {
+  flex-grow: 1;
+}
+
+.form__comment {
+  margin-bottom: 31px;
+}
+
+.form__comment-title {
+  margin-bottom: 31px;
+}
+
+.form__comment-description {
+  width: 100%;
+}
+
+.form__important {
+  font-family: "ArialMT", sans-serif;
+  font-size: 14px;
+  line-height: 10px;
+  color: $brown;
+}
+
+.form__button {
+  border: none;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .form__intro {
     font-size: 20px;
     line-height: 30px;
+    width: 323px;
   }
 
   .form__important {
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .form__info {
+    margin-bottom: 52px;
+  }
+
+  .form__info-item {
+    margin-bottom: 20px;
+  }
+
+  .form__type-program {
+    margin-bottom: 59px;
+  }
+
+  .form__program-item {
+    margin-bottom: 20px;
+  }
+
+  .form__info-value {
+    &--first {
+      width: 50px;
+      margin-right: 12px;
+    }
+
+    &--second {
+      width: 60px;
+      margin-right: 12px;
+    }
+
+    &--third {
+      width: 115px;
+      margin-right: 12px;
+    }
+  }
+
+  .form__contacts {
+    margin-bottom: 55px;
+  }
+
+  .form__contacts-value {
+    &--first {
+      width: 62px;
+      margin-right: 12px;
+    }
+
+    &--second {
+      width: 83px;
+      margin-right: 12px;
+    }
+  }
+
+  .form__comment {
+    margin-bottom: 69px;
+  }
+
+  .form__comment-title {
+    margin-bottom: 71px;
+  }
+
+  .form__comment-description {
+    width: 100%;
   }
 }
 
@@ -48,9 +186,18 @@
 
   .form__type-program {
     width: 570px;
+    margin-bottom: 73px;
   }
 
   .form__contacts {
+    margin-bottom: 71px;
+  }
+
+  .form__contacts-title {
+    margin-bottom: 70px;
+  }
+
+  .form__contacts-wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -58,9 +205,15 @@
 
   .form__contacts-item {
     width: 570px;
+    margin: 0;
   }
 
   .form__comment {
     width: 100%;
+    margin-bottom: 71px;
+  }
+
+  .form__button {
+    width: 568px;
   }
 }

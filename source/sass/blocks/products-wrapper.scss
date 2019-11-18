@@ -1,0 +1,12 @@
+.products__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .products__wrapper {
+    margin-bottom: 86px;
+  }
+}

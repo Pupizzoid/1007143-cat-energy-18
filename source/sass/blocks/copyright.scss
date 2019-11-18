@@ -1,15 +1,13 @@
-@media (min-width: $mobile-width) {
-  .copyright {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
-  .copyright__text {
-    font-family: "ArialMT", sans-serif;
-    font-size: 16px;
-    color: $brown;
-  }
+.copyright__text {
+  font-family: "ArialMT", sans-serif;
+  font-size: 16px;
+  color: $brown;
 }
 
 @media (min-width: $tablet-width) {
