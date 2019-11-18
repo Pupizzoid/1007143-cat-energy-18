@@ -15,10 +15,6 @@
   width: 25px;
 }
 
-.main-nav {
-  width: 100%;
-}
-
 @media (min-width: $tablet-width) {
   .page-header {
     padding: 24px 0;
@@ -26,11 +22,6 @@
 
   .page-header__logo-image {
     width: 174px;
-  }
-
-  .main-nav {
-    width: 515px;
-    padding: 0;
   }
 
   .page-header__toggle {
