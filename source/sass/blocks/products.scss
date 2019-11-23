@@ -1,17 +1,80 @@
 .products {
-  outline: 1px solid red;
+  margin-top: 31px;
+}
+
+.products__title {
+  margin-left: 22px;
+}
+
+.products__list {
+  list-style: none;
+  padding: 0;
 }
 
 .products__item {
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding: 24px 0;
+  border-bottom: 1px solid $grey2;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  &:first-child {
+    border-top: 1px solid $grey2;
+  }
+
+  &:last-child {
+    justify-content: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 130px;
+      width: 31px;
+      height: 31px;
+      opacity: 0.2;
+      background: url("../img/icon-plus-mobile.svg") no-repeat center;
+    }
+  }
 }
 
 .products__table {
+  margin-bottom: 23px;
+  width: 140px;
+}
+
+.products__caption {
+  display: block;
+  width: 74px;
+  margin: 0;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.products__table-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 140px;
+}
+
+.products__value,
+.products__field {
   font-family: "ArialMT", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: $brown;
+  width: 44px;
+  padding: 0;
+}
+
+.products__field {
+  text-align: right;
+}
+
+.products__value {
+  text-align: left;
 }
 
 .products__text {
@@ -19,11 +82,14 @@
   font-size: 12px;
   line-height: 16px;
   color: $brown;
+  margin: 0;
+  margin-bottom: 22px;
 }
 
 .products__link {
   color: $white;
   background-color: $green;
+  width: 100%;
 
   &--all {
     background-color: $grey;
@@ -31,7 +97,21 @@
   }
 }
 
+.products__intro {
+  margin-top: 49px;
+  margin-bottom: 11px;
+}
+
 @media (min-width: $tablet-width) {
+  .products {
+    margin-top: 56px;
+  }
+
+  .products__title {
+    margin: 0;
+    margin-bottom: 156px;
+  }
+
   .products__list {
     display: flex;
     flex-wrap: wrap;
@@ -40,36 +120,119 @@
 
   .products__item {
     width: 324px;
-    padding-bottom: 40px;
-    padding-top: 165px;
+    padding: 0 38px 40px 38px;
     background: $grey;
     margin-bottom: 140px;
+    border: none;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+
+    &:first-child {
+      border: none;
+    }
+
+    &:last-child {
+      background: $white;
+      text-align: center;
+      border: 1px solid $grey2;
+
+      &::after {
+        content: "";
+        top: 43px;
+        left: 130px;
+        width: 61px;
+        height: 61px;
+        background: url("../img/icon-plus.svg") no-repeat center;
+      }
+    }
   }
 
-  .products__item:nth-last-child(-n+2) {
-    margin-bottom: 0;
+  .products__link-image {
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: 40px;
   }
 
   .products__table {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 33px;
+  }
+
+  .products__caption {
+    width: 101px;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  .products__table-list {
+    width: 100%;
+  }
+
+  .products__table-item {
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid $grey2;
+  }
+
+  .products__value,
+  .products__field {
     font-size: 16px;
     line-height: 16px;
+    width: 65px;
+  }
+
+  .products__field {
+    text-align: right;
   }
 
   .products__text {
     font-size: 16px;
     line-height: 16px;
+    margin: 0;
+    margin-top: 29px;
+    margin-bottom: 85px;
+    width: 169px;
+  }
+
+  .products__intro {
+    display: inline-block;
+    vertical-align: center;
+    width: 140px;
+    margin-top: 130px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .products {
+    margin-top: 69px;
+  }
+
   .products__item {
     width: 245px;
     padding-bottom: 40px;
-    padding-top: 165px;
+    padding-top: 32px;
     margin-bottom: 142px;
+
+    &:last-child {
+      &::after {
+        content: "";
+        top: 42px;
+        left: 94px;
+      }
+    }
   }
 
   .products__item:nth-last-child(-n+4) {
     margin-bottom: 0;
+  }
+
+  .products__link-image {
+    margin-bottom: 38px;
   }
 }

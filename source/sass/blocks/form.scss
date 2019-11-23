@@ -1,13 +1,17 @@
 .form {
   padding-bottom: 34px;
-  outline: 1px solid red;
 }
 
-.form__intro {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  width: 227px;
+
+.form__program {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__info {
+  border: 0;
+  border-bottom: 1px solid $grey;
+  width: 100%;
 }
 
 .form__info-item {
@@ -18,9 +22,18 @@
 
 .form__info-field {
   flex-grow: 1;
+  height: 45px;
+  border: 1px solid $grey2;
+  font-family: "Oswald", sans-serif;
+  color: $brown;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-left: 16px;
 }
 
 .form__info-value {
+  align-self: center;
+
   &--first {
     width: 33px;
     margin-right: 12px;
@@ -39,26 +52,126 @@
 
 .form__type-program {
   margin-bottom: 31px;
+  padding: 22px 0;
+  border: 0;
+  border-bottom: 1px solid $grey2;
+  width: 100%;
 }
 
 .form__program-item {
-  margin-bottom: 14px;
+  margin-bottom: 26px;
+  position: relative;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.form__program-field {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+
+.form__program-custom {
+  position: relative;
+  padding: 0 0 0 46px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $grey2;
+    border-radius: 50%;
+    background: $white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 9px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $green;
+    opacity: 0;
+  }
+}
+
+.form__program-field:checked + .form__program-custom::after {
+  opacity: 1;
+}
+
+.form__program-value:focus {
+  opacity: 0.3;
+}
+
+.form__contacts {
+  position: relative;
+  margin-bottom: 31px;
+  width: 100%;
+  padding: 0;
+  border: 0;
 }
 
 .form__contacts-title {
   margin-bottom: 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 99px;
+    height: 3px;
+    background: $green;
+  }
 }
 
-.form__contacts {
-  margin-bottom: 31px;
-  width: 100%;
+.form__subtitle {
+  font-size: 24px;
 }
 
 .form__contacts-item {
   display: flex;
+  position: relative;
+
+  &--mail {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      right: 12px;
+      width: 18px;
+      height: 14px;
+      background: url("../img/icon-mail.svg") no-repeat;
+      opacity: 0.5;
+    }
+  }
+
+  &--phone {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 21px;
+      height: 21px;
+      background: url("../img/icon-phone.svg") no-repeat;
+      opacity: 0.5;
+    }
+  }
 }
 
 .form__contacts-value {
+  align-self: center;
+
   &--first {
     width: 50px;
     margin-right: 12px;
@@ -72,18 +185,44 @@
 
 .form__contacts-field {
   flex-grow: 1;
+  height: 45px;
+  border: 1px solid $grey2;
+  font-family: "Oswald", sans-serif;
+  color: $brown;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-left: 16px;
 }
+
 
 .form__comment {
   margin-bottom: 31px;
+  padding: 0;
+  border: 0;
+  position: relative;
+  width: 100%;
 }
 
 .form__comment-title {
   margin-bottom: 31px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 158px;
+    height: 3px;
+    background: $green;
+  }
 }
 
 .form__comment-description {
   width: 100%;
+  font-family: "Oswald", sans-serif;
+  color: $brown;
+  border: 1px solid $grey2;
+  padding: 15px 7px 0 13px;
 }
 
 .form__important {
@@ -91,35 +230,44 @@
   font-size: 14px;
   line-height: 10px;
   color: $brown;
+  text-align: center;
+  width: 100%;
 }
 
 .form__button {
   border: none;
-  width: 100%;
+  width: 280px;
+  margin-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
-  .form__intro {
-    font-size: 20px;
-    line-height: 30px;
-    width: 323px;
+  .form__program {
+    padding: 0;
   }
 
-  .form__important {
-    font-size: 10px;
-    line-height: 10px;
+  .form__subtitle {
+    font-size: 36px;
   }
 
   .form__info {
     margin-bottom: 52px;
+    padding: 0;
+    border: none;
   }
 
   .form__info-item {
     margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .form__info-field {
+    height: 52px;
   }
 
   .form__type-program {
     margin-bottom: 59px;
+    padding: 25px 0 25px 28px;
+    border: 1px solid $grey2;
   }
 
   .form__program-item {
@@ -133,18 +281,39 @@
     }
 
     &--second {
-      width: 60px;
+      width: 74px;
       margin-right: 12px;
     }
 
     &--third {
-      width: 115px;
+      width: 117px;
       margin-right: 12px;
     }
   }
 
   .form__contacts {
     margin-bottom: 55px;
+    padding: 0;
+  }
+
+  .form__contacts-title {
+    margin-bottom: 54px;
+
+    &::after {
+      top: 30px;
+      right: -72px;
+      width: 152px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: -72px;
+      width: 40px;
+      height: 3px;
+      background: $green;
+    }
   }
 
   .form__contacts-value {
@@ -161,14 +330,43 @@
 
   .form__comment {
     margin-bottom: 69px;
+    padding: 0;
   }
 
   .form__comment-title {
     margin-bottom: 71px;
+
+    &::after {
+      top: 30px;
+      right: -72px;
+      width: 480px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: -72px;
+      width: 40px;
+      height: 3px;
+      background: $green;
+    }
   }
 
   .form__comment-description {
     width: 100%;
+  }
+
+  .form__button {
+    margin: 0;
+    width: 283px;
+  }
+
+  .form__important {
+    font-size: 16px;
+    width: 200px;
+    margin-left: 61px;
+    align-self: center;
   }
 }
 
@@ -189,12 +387,22 @@
     margin-bottom: 73px;
   }
 
+  .form__program-item {
+    margin-bottom: 33px;
+  }
+
   .form__contacts {
     margin-bottom: 71px;
   }
 
   .form__contacts-title {
     margin-bottom: 70px;
+
+    &::after {
+      top: 30px;
+      right: -72px;
+      width: 725px;
+    }
   }
 
   .form__contacts-wrapper {
@@ -213,7 +421,19 @@
     margin-bottom: 71px;
   }
 
+  .form__comment-title {
+    &::after {
+      top: 30px;
+      right: -72px;
+      width: 1065px;
+    }
+  }
+
   .form__button {
     width: 568px;
+  }
+
+  .form__important {
+    margin-right: 391px;
   }
 }

@@ -1,9 +1,19 @@
 .stocks {
   min-height: 289px;
-  margin-bottom: 35px;
   background: url("../img/gift-photo-mobile1x.jpg") no-repeat center;
+  background-size: cover;
   width: 100%;
-  outline: 1px solid red;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 120px;
+    width: 56px;
+    height: 61px;
+    background: url("../img/icon-gift.svg") no-repeat;
+  }
 }
 
 .stocks__wrapper {
@@ -20,18 +30,41 @@
 
 @media (min-width: $tablet-width) {
   .stocks {
-    width: 245px;
+    position: relative;
+    width: 100%;
     margin: 0;
     min-height: 200px;
-    margin-bottom: 76px;
     background: url("../img/gift-photo-tablet1x.jpg") no-repeat center;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 100px;
+      width: 56px;
+      height: 61px;
+      background: url("../img/icon-gift.svg") no-repeat;
+    }
+  }
+
+  .stocks__wrapper {
+    margin-left: 424px;
+    margin-top: 65px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .stocks {
     min-height: 289px;
-    margin-bottom: 86px;
     background: url("../img/gift-photo-desktop1x.jpg") no-repeat;
+    background-size: cover;
+    width: 245px;
+    margin: 0;
+  }
+
+  .stocks__wrapper {
+    margin-top: 182px;
+    margin-left: 46px;
   }
 }

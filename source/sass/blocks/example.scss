@@ -1,11 +1,13 @@
 .example {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding-top: 33px;
   padding-bottom: 38px;
   background: $grey;
-  outline: 1px solid red;
+}
+
+.example__section-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .example__title {
@@ -19,53 +21,119 @@
   font-size: 14px;
   line-height: 18px;
   color: $brown;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.example__result-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 38px;
 }
 
 .example__result {
   width: 124px;
+  position: relative;
+  padding: 15px;
+  border: 1px solid $grey2;
+  border-radius: 5px;
 }
 
 .example__price {
-  width: 187px;
+  align-self: center;
+  width: 100%;
   font-size: 14px;
   line-height: 20px;
+  text-align: center;
+  margin: 0;
+  margin-top: 38px;
 }
 
 .example__value {
+  display: block;
+  text-align: center;
   font-size: 24px;
   line-height: 24px;
 }
 
 .example__field {
-  width: 57px;
+  position: absolute;
+  top: 50px;
+  left: 22px;
+  padding: 0 8px 0 8px;
+  width: 87px;
+  word-wrap: wrap;
   font-family: "ArialMT", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: $brown;
+  text-align: center;
+  background: $grey;
+}
+// высота для сетки
+.example__image-wrapper {
+  height: 232px;
+  width: 100%;
 }
 
-.example__image {
+.example__button {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
+}
+
+.example__button-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.example__before {
-  width: 36px;
-}
-
+.example__before,
 .example__after {
   width: 36px;
+  border: none;
+  background: transparent;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+
+.example__track {
+  width: 84px;
+  height: 14px;
+  background: $white;
+  border-radius: 6px;
+  border: 1px solid $grey2;
+  align-self: center;
+}
+
+.example__cursor {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background: $green;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .example {
     padding-top: 51px;
     padding-bottom: 67px;
-    background: linear-gradient(to bottom, $grey 50%, $white 50%);
+    background: linear-gradient(to bottom, $white 50%, $grey 50%);
   }
 
   .example__title {
@@ -77,41 +145,112 @@
     width: 674px;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 56px;
+  }
+
+  .example__result-wrapper {
+    width: 100%;
+    margin-bottom: 86px;
   }
 
   .example__result {
     width: 162px;
+    padding: 16px;
   }
 
   .example__price {
-    width: 205px;
+    width: 174px;
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
+    align-self: baseline;
+    text-align: right;
+  }
+
+  .example__image-wrapper {
+    height: 517px;
   }
 
   .example__value {
     font-size: 30px;
     line-height: 37px;
+    width: 100%;
   }
 
   .example__field {
-    width: 57px;
     font-size: 14px;
     line-height: 14px;
+    top: 77px;
+    left: 10px;
+    background: $white;
+
+    &--weight {
+      width: 115px;
+      top: 63px;
+      left: 23px;
+    }
+
+    &--time {
+      width: 143px;
+      top: 63px;
+      left: 9px;
+    }
   }
 
-  .example__image {
+  .example__button {
     width: 100%;
     font-size: 20px;
-    line-height: 20px;
+  }
+
+  .example__image-before {
+    width: 50%;
+    height: 449px;
+  }
+
+  .example__image-after {
+    width: 50%;
+    height: 517px;
   }
 
   .example__before {
     width: 46px;
   }
 
+  .example__cursor {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -14px;
+      left: 214px;
+      width: 34px;
+      height: 34px;
+      border: 1px solid $grey2;
+      border-radius: 50%;
+      background: $white;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: 227px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $green;
+    }
+  }
+
   .example__after {
     width: 46px;
+  }
+
+  .example__track {
+    width: 428px;
+    height: 6px;
+    border: none;
+    border-radius: 2.5px;
+    background: $grey3;
   }
 }
 
@@ -129,5 +268,36 @@
 
   .example__text {
     width: 430px;
+  }
+
+  .example__result-wrapper {
+    width: 370px;
+    margin: 0;
+  }
+
+  .example__price {
+    width: 435px;
+    margin-top: 56px;
+    text-align: left;
+  }
+
+  .example__price-value {
+    margin-left: 64px;
+  }
+
+  .example__field {
+    background: $grey;
+  }
+
+  .example__image-wrapper {
+    min-height: 517px;
+  }
+
+  .example__wrapper {
+    width: 50%;
+  }
+
+  .example__button {
+    width: 50%;
   }
 }

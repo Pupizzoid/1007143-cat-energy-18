@@ -1,5 +1,8 @@
 .social__list {
-  width: 100%;
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
