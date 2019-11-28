@@ -1,6 +1,10 @@
+.page {
+  overflow-x: hidden;
+}
+
 .page__title {
-  margin-top: 30px;
-  margin-bottom: 35px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .page__intro {
@@ -14,6 +18,10 @@
 @media (min-width: $tablet-width) {
   .page__title {
     margin: 54px 0;
+
+    &--tablet {
+      margin-left: -40px;
+    }
   }
 
   .page__intro {
@@ -27,11 +35,15 @@
 
 @media (min-width: $desktop-width) {
   .page__title {
-    margin-top: 63px;
-    margin-bottom: 53px;
+    margin-top: 71px;
+    margin-bottom: 56px;
+
+    &--tablet {
+      margin-left: 0;
+    }
   }
 
   .page__intro {
-    margin-bottom: 69px;
+    margin-bottom: 66px;
   }
 }

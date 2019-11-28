@@ -1,7 +1,4 @@
 .page-footer {
-
-  padding-top: 39px;
-  padding-bottom: 31px;
   background: $grey;
 }
 
@@ -13,7 +10,8 @@
 
 .page-footer__logo {
   width: 100%;
-  padding-bottom: 39px;
+  padding-bottom: 29px;
+  padding-top: 20px;
   border-bottom: 1px solid $grey2;
 }
 
@@ -24,14 +22,14 @@
 
 .page-footer__social {
   width: 100%;
-  padding-top: 26px;
-  padding-bottom: 24px;
+  padding-top: 21px;
+  padding-bottom: 18px;
   border-bottom: 1px solid $grey2;
 }
 
 .page-footer__copyright {
   width: 100%;
-  padding-top: 31px;
+  padding-top: 28px;
 }
 
 @media (min-width: $tablet-width) {

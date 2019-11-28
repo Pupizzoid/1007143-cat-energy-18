@@ -33,12 +33,11 @@
   height: 39px;
   width: 191px;
   margin-bottom: 4.6%;
-  margin-left: 6.2%;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    padding-top: 24px;
+    padding-top: 43px;
 
     &::after {
       display: none;
@@ -53,9 +52,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding-top: 53px;
-    padding-bottom: 50px;
-    width: 100%;
+    padding-top: 73px;
 
     &--firstly {
       &::after {

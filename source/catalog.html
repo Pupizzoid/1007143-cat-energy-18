@@ -31,7 +31,7 @@
     </header>
 
     <main class="page">
-      <div class="container">
+      <div class=" container">
         <section class="products">
           <h1 class="products__title title">Каталог продукции</h1>
           <ul class="products__list">
@@ -199,13 +199,15 @@
             <li class="products__item">
               <b class="products__intro title-description">Показать еще 100500 товаров</b>
               <p class="products__text">На самом деле вкусов гораздо больше!</p>
-              <a class="products__link products__link--all button button" href="#">Показать все</a>
+              <a class=" products__link products__link--all button" href="#">Показать все</a>
             </li>
           </ul>
         </section>
 
         <div class="products__wrapper">
-          <h2 class="extra-products__title">Дополнительные товары</h2>
+          <div class="extra-products__title-wrapper">
+            <h2 class="extra-products__title">Дополнительные товары</h2>
+          </div>
           <section class="extra-products">
             <ul class="extra-products__list reset">
               <li class="extra-products__item">
@@ -245,21 +247,21 @@
 
           <section class="stocks">
             <h2 class="visually-hidden">Акции</h2>
-            <div class="stocks__wrapper">
-              <p class="stocks__info">Закажите все и получите чехол для кота в подарок!</p>
-            </div>
+            <img  class="stocks__image" src="./img/icon-gift.svg" alt="Акционный подарок" width="56" height="61">
+            <p class="stocks__info">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
           </section>
         </div>
-      </div>
+    </div>
 
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts__wrapper container">
           <div class="contacts__details">
-            <p class="contacts__promo">приглашаем к сотрудничеству дилеров!</p>
-            <p class="contacts__text">ул. Большая<br>
-              Конюшенная, д. 19/8<br>
-              Санкт-Петербург</p>
+            <p class="contacts__promo">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            <p class="contacts__text">
+              <span class="contacts__address">ул. Большая<br>
+              Конюшенная, д. 19/8</span>
+            <span class="contacts__city">Санкт-Петербург</span></p>
           </div>
         </div>
         <div class="contacts__map"></div>
@@ -292,5 +294,5 @@
         </div>
       </div>
     </footer>
-    </body>
-    </html>
+  </body>
+</html>

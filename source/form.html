@@ -31,8 +31,8 @@
     </header>
 
     <main class="page">
-      <div class="container">
-      <h1 class="page__title title">Подбор программы</h1>
+      <div class="container container--thirdly">
+      <h1 class="page__title page__title--tablet title">Подбор программы</h1>
       <p class="page__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
       <section class="form">
@@ -82,7 +82,9 @@
             </ul>
           </fieldset>
           <fieldset class="form__contacts">
-            <legend class="form__contacts-title form__subtitle">Контактные данные (владельца кота)</legend>
+            <div class="form__title-wrapper">
+              <h3 class="form__title form__title--contacts">Контактные данные (владельца кота)</h3>
+            </div>
             <div class="form__contacts-wrapper">
               <p class="form__contacts-item form__contacts-item--mail">
                 <label class="form__contacts-value form__contacts-value--first title-description" for="email">E-mail:<sup>*</sup></label>
@@ -95,13 +97,17 @@
             </div>
           </fieldset>
           <fieldset class="form__comment">
-            <legend class="form__comment-title form__subtitle">Комментарий</legend>
-            <textarea class="form__comment-description title-description" name="comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+            <div class="form__title-wrapper">
+              <h3 class="form__title form__title--comment">Комментарий</h3>
+            </div>
+            <textarea class="form__comment-description title-description" name="comment">Расскажите обо всех повадках кота</textarea>
           </fieldset>
 
           <fieldset class="extra">
-            <legend class="extra__title form__subtitle">Дополнительно</legend>
-            <ul class="extra__list reset">
+            <div class="extra__title-wrapper">
+              <h3 class="extra__title">Дополнительно</h3>
+            </div>
+            <ul class="extra__list">
               <li class="extra__item">
                 <label class="extra__value title-description" for="sweetener">
                   <input class="extra__field" type="checkbox" id="sweetener" name="sweetener" checked>
@@ -132,7 +138,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__button button" type="submit">Отправить заявку</button>
+          <button class="form__button button button--big" type="submit">Отправить заявку</button>
           <small class="form__important">
             <sup>*</sup> — Обязательные поля
           </small>
@@ -140,18 +146,19 @@
       </section>
     </div>
 
-      <section class="contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__wrapper container">
-          <div class="contacts__details">
-            <p class="contacts__promo">приглашаем к сотрудничеству дилеров!</p>
-            <p class="contacts__text">ул. Большая<br>
-              Конюшенная, д. 19/8<br>
-              Санкт-Петербург</p>
-          </div>
+    <section class="contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="contacts__wrapper container">
+        <div class="contacts__details">
+          <p class="contacts__promo">приглашаем к&nbsp;отрудничеству дилеров!</p>
+          <p class="contacts__text">
+            <span class="contacts__address">ул. Большая<br>
+            Конюшенная, д. 19/8</span>
+          <span class="contacts__city">Санкт-Петербург</span></p>
         </div>
-        <div class="contacts__map"></div>
-      </section>
+      </div>
+      <div class="contacts__map"></div>
+    </section>
     </main>
 
     <footer class="page-footer">
