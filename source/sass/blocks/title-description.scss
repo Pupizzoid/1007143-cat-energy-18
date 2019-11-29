@@ -1,10 +1,12 @@
 .title-description {
   font-size: 16px;
-  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
-  font-size: 20px;
+  .title-description {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

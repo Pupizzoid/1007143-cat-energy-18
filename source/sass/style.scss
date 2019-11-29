@@ -21,8 +21,9 @@
 @import "./blocks/title-description.scss";
 @import "./blocks/title.scss";
 @import "./blocks/social.scss";
-@import "./blocks/products-wrapper.scss";
 @import "./blocks/main-nav.scss";
+@import "./blocks/page.scss";
+@import "./blocks/container.scss";
 
 
 html {
@@ -36,7 +37,6 @@ html {
 }
 
 img {
-  width: 100%;
   height: auto;
 }
 
@@ -51,33 +51,4 @@ body {
 a {
   text-decoration: none;
   color: #111111;
-}
-
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .container {
-    padding-left: 30px;
-    padding-right: 30px;
-
-    &--secondary {
-      padding-left: 71px;
-      padding-right: 67px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container {
-    padding-left: 110px;
-    padding-right: 110px;
-
-    &--secondary {
-      padding-left: 113px;
-      padding-right: 110px;
-    }
-  }
 }

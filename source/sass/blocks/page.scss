@@ -1,0 +1,49 @@
+.page {
+  overflow-x: hidden;
+}
+
+.page__title {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.page__intro {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 227px;
+  margin-bottom: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .page__title {
+    margin: 54px 0;
+
+    &--tablet {
+      margin-left: -40px;
+    }
+  }
+
+  .page__intro {
+    margin: 0;
+    margin-bottom: 67px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__title {
+    margin-top: 71px;
+    margin-bottom: 56px;
+
+    &--tablet {
+      margin-left: 0;
+    }
+  }
+
+  .page__intro {
+    margin-bottom: 66px;
+  }
+}

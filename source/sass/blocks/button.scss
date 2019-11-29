@@ -1,7 +1,21 @@
 .button {
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $white;
   background-color: $green;
   text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--big {
+      padding: 16px 0;
+      font-size: 20px;
+      line-height: 1;
+    }
+  }
 }

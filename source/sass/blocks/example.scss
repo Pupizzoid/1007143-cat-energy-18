@@ -1,16 +1,22 @@
 .example {
+  padding-top: 18px;
+  padding-bottom: 32px;
+  background: $grey;
+}
+
+.example__section-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 33px;
-  padding-bottom: 38px;
-  background: $grey;
-  outline: 1px solid red;
+  justify-content: center;
+}
+
+.example__description-wrapper {
+  width: 100%;
 }
 
 .example__title {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 26px;
 }
 
 .example__text {
@@ -19,115 +25,320 @@
   font-size: 14px;
   line-height: 18px;
   color: $brown;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.example__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 38px;
+}
+
+.example__result-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__result {
   width: 124px;
+  position: relative;
+  padding: 15px;
+  border: 1px solid $grey2;
+  border-radius: 5px;
 }
 
 .example__price {
-  width: 187px;
+  align-self: center;
+  width: 100%;
   font-size: 14px;
   line-height: 20px;
+  text-align: center;
+  margin: 0;
+  margin-top: 36px;
+  text-transform: uppercase;
 }
 
 .example__value {
+  display: block;
+  text-align: center;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .example__field {
-  width: 57px;
+  position: absolute;
+  top: 48px;
+  left: 17px;
+  padding: 0 8px 0 8px;
+  width: 87px;
+  word-wrap: wrap;
   font-family: "ArialMT", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: $brown;
+  text-align: center;
+  background: $grey;
+}
+// высота для сетки
+.example__image-wrapper {
+  min-height: 265px;
+  width: 100%;
 }
 
-.example__image {
+.example__button {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.example__button-wrapper {
+  display: flex;
+  width: 220px;
+  justify-content: space-around;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.example__before {
-  width: 36px;
-}
-
+.example__before,
 .example__after {
-  width: 36px;
+  width: 50px;
+  border: none;
+  background: transparent;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+
+.example__track {
+  width: 84px;
+  height: 14px;
+  background: $white;
+  border-radius: 6px;
+  border: 1px solid $grey2;
+  align-self: center;
+}
+
+.example__cursor {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background: $green;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .example {
-    padding-top: 51px;
-    padding-bottom: 67px;
-    background: linear-gradient(to bottom, $grey 50%, $white 50%);
+    padding-bottom: 72px;
+    padding-top: 40px;
+    position: relative;
+    border-top: 1px solid $grey2;
+    background: linear-gradient(to bottom, $white 0, $white 211px, $white 400px, $grey 100%);
+  }
+
+  .example__description-wrapper {
+    width: 100%;
   }
 
   .example__title {
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 64px;
   }
 
   .example__text {
-    width: 674px;
+    width: 678px;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 53px;
+  }
+
+  .example__price-wrapper {
+    width: 100%;
+    margin-bottom: 86px;
+  }
+
+  .example__result-wrapper {
+    width: 366px;
   }
 
   .example__result {
     width: 162px;
+    padding: 20px;
   }
 
   .example__price {
-    width: 205px;
+    width: 174px;
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
+    align-self: center;
+    text-align: right;
+  }
+
+  .example__price-value {
+    display: inline-block;
+    margin-top: 9px;
+  }
+
+  .example__image-wrapper {
+    height: 532px;
+  }
+
+  .example__button-wrapper {
+    width: 600px;
   }
 
   .example__value {
     font-size: 30px;
-    line-height: 37px;
+    line-height: 1;
+    width: 100%;
   }
 
   .example__field {
-    width: 57px;
     font-size: 14px;
     line-height: 14px;
+    top: 77px;
+    left: 10px;
+    background: $white;
+
+    &--weight {
+      width: 115px;
+      top: 63px;
+      left: 22px;
+    }
+
+    &--time {
+      width: 143px;
+      top: 63px;
+      left: 8px;
+    }
   }
 
-  .example__image {
+  .example__button {
     width: 100%;
     font-size: 20px;
-    line-height: 20px;
   }
 
-  .example__before {
-    width: 46px;
+  .example__image-before {
+    width: 50%;
+    height: 449px;
   }
 
+  .example__image-after {
+    width: 50%;
+    height: 517px;
+  }
+
+  .example__before,
   .example__after {
-    width: 46px;
+    width: 64px;
+    font-size: 20px;
+  }
+
+  .example__cursor {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -14px;
+      left: 198px;
+      width: 34px;
+      height: 34px;
+      border: 1px solid $grey2;
+      border-radius: 50%;
+      background: $white;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: 211px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $green;
+    }
+  }
+
+  .example__track {
+    width: 428px;
+    height: 6px;
+    border: none;
+    border-radius: 2.5px;
+    background: $grey3;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    padding-top: 90px;
+    padding-top: 20px;
     padding-bottom: 67px;
+    background: linear-gradient(to bottom, $white 0, $white 150px, $grey 150px, $grey 100%);
   }
 
   .example__title {
     width: 100%;
     margin: 0;
-    margin-bottom: 142px;
+    margin-bottom: 147px;
   }
 
   .example__text {
-    width: 430px;
+    width: 432px;
+    margin-bottom: 68px;
+  }
+
+  .example__description-wrapper {
+    width: 50%;
+  }
+
+  .example__result-wrapper {
+    width: 367px;
+    margin: 0;
+  }
+
+  .example__result {
+    padding: 17px 29px 21px 29px;
+  }
+
+  .example__price {
+    width: 435px;
+    margin-top: 53px;
+    text-align: left;
+  }
+
+  .example__price-value {
+    margin-left: 59px;
+  }
+
+  .example__field {
+    background: $grey;
+  }
+
+  .example__image-wrapper {
+    min-height: 517px;
+  }
+
+  .example__wrapper {
+    width: 50%;
+  }
+
+  .example__button {
+    width: 50%;
   }
 }
