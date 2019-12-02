@@ -1,12 +1,18 @@
 .stocks {
-  background: url("../img/gift-photo-mobile1x.jpg") no-repeat center;
-  background-size: cover;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 65px 61px 43px 61px;
+
+  width: 100%;
+  padding: 65px 61px 41px 61px;
+
+  background: url("../img/gift-photo-mobile1x.jpg") no-repeat center;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile2x.jpg");
+  }
 }
 
 .stocks__image {
@@ -15,23 +21,32 @@
 
 .stocks__info {
   width: 159px;
-  color: $white;
+  margin: 0;
+
   text-align: center;
+
+  color: $white;
+
   font-family: "ArialMT", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .stocks {
-    width: 100%;
-    margin: 0;
-    background: url("../img/gift-photo-tablet1x.jpg") no-repeat center;
-    background-size: cover;
     flex-direction: row;
     justify-content: space-between;
+
+    width: 100%;
+    margin: 0;
     padding: 66px 125px 72px 91px;
+
+    background: url("../img/gift-photo-tablet1x.jpg") no-repeat center;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet2x.jpg");
+    }
   }
 
   .stocks__image {
@@ -41,12 +56,17 @@
 
 @media (min-width: $desktop-width) {
   .stocks {
+    flex-direction: column;
     min-height: 289px;
-    background: url("../img/gift-photo-desktop1x.jpg") no-repeat;
-    background-size: cover;
     width: 245px;
     margin: 0;
-    flex-direction: column;
     padding: 65px 61px 43px 61px;
+
+    background: url("../img/gift-photo-desktop1x.jpg") no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop2x.jpg");
+    }
   }
 }

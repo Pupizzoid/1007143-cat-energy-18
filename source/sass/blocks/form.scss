@@ -4,40 +4,52 @@
 
 .form__title-wrapper {
   position: relative;
+
   margin-left: -22px;
   margin-right: -22px;
 
   &::before {
     content: "";
+
+    z-index: -1;
     position: absolute;
     top: 13px;
     left: 0;
+
     width: 100vw;
     height: 3px;
+
     background: $green;
-    z-index: -1;
   }
 
   &::after {
     content: "";
+
+    z-index: -1;
     position: absolute;
     top: 13px;
     right: 0;
+
     width: 100vw;
     height: 3px;
+
     background: $green;
-    z-index: -1;
   }
 }
 
 .form__title {
-  font-size: 24px;
-  line-height: 24px;
   display: inline-block;
   vertical-align: baseline;
-  background: $white;
+
   padding-right: 20px;
   padding-left: 20px;
+  margin: 0;
+
+  background: $white;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
 
   &--comment {
     width: 162px;
@@ -56,30 +68,37 @@
 }
 
 .form__info {
-  border: 0;
   width: 100%;
   padding: 0;
+
+  border: 0;
 }
 
 .form__info-item {
   display: flex;
+
   width: 100%;
   margin-bottom: 14px;
 }
 
 .form__info-field {
   flex-grow: 1;
+
   height: 45px;
-  border: 1px solid $grey2;
-  font-family: "Oswald", sans-serif;
-  color: $brown;
-  font-size: 16px;
-  text-transform: uppercase;
   padding-left: 16px;
+
+  border: 1px solid $grey2;
+  text-transform: uppercase;
+
+  color: $brown;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
 }
 
 .form__info-value {
   align-self: center;
+
   margin-right: 15px;
 
   &--first {
@@ -98,35 +117,16 @@
 
 .form__type-program {
   padding: 34px 0 25px 0;
-  margin-bottom: 28px;
-  border: 0;
+  margin-bottom: 4px;
   width: 100%;
-  position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: -20px;
-    width: calc(100% + 40px);
-    height: 1px;
-    background: $grey2;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -20px;
-    width: calc(100% + 40px);
-    height: 1px;
-    background: $grey2;
-  }
+  border: 0;
 }
 
 .form__program-item {
-  margin-bottom: 18px;
   position: relative;
+
+  margin-bottom: 18px;
 
   &:last-child {
     margin: 0;
@@ -136,6 +136,7 @@
 .form__program-field {
   position: absolute;
   z-index: -1;
+
   opacity: 0;
 }
 
@@ -146,24 +147,32 @@
 
   &::before {
     content: "";
+
     position: absolute;
     top: -3px;
-    left: -4px;
+    left: -1px;
+
     width: 30px;
     height: 30px;
+
     border: 1px solid $grey2;
     border-radius: 50%;
+
     background: $white;
   }
 
   &::after {
     content: "";
+
     position: absolute;
     top: 6px;
-    left: 5px;
+    left: 8px;
+
     width: 12px;
     height: 12px;
+
     border-radius: 50%;
+
     background: $green;
     opacity: 0;
   }
@@ -181,23 +190,30 @@
   margin-bottom: 14px;
   width: 100%;
   padding: 0;
+  padding-top: 24px;
+
   border: 0;
 }
 
 .form__contacts-item {
-  display: flex;
   position: relative;
+
+  display: flex;
+
   margin: 0;
   margin-bottom: 14px;
 
   &--mail {
     &::after {
       content: "";
+
       position: absolute;
       top: 15px;
       right: 12px;
+
       width: 18px;
       height: 14px;
+
       background: url("../img/icon-mail.svg") no-repeat;
       opacity: 0.5;
     }
@@ -206,11 +222,14 @@
   &--phone {
     &::after {
       content: "";
+
       position: absolute;
       top: 12px;
       right: 12px;
+
       width: 21px;
       height: 21px;
+
       background: url("../img/icon-phone.svg") no-repeat;
       opacity: 0.5;
     }
@@ -219,6 +238,7 @@
 
 .form__contacts-value {
   align-self: center;
+
   margin-left: -4px;
 
   &--first {
@@ -234,46 +254,58 @@
 
 .form__contacts-field {
   flex-grow: 1;
+
   height: 45px;
-  border: 1px solid $grey2;
-  font-family: "Oswald", sans-serif;
-  color: $brown;
-  font-size: 16px;
-  text-transform: uppercase;
   padding-left: 16px;
+
+  border: 1px solid $grey2;
+  text-transform: uppercase;
+
+  color: $brown;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
 }
 
 
 .form__comment {
+  position: relative;
+
   margin-bottom: 24px;
   padding: 0;
   border: 0;
-  position: relative;
   width: 100%;
 }
 
 .form__comment-description {
   width: 100%;
-  font-family: "Oswald", sans-serif;
-  color: $brown;
-  border: 1px solid $grey2;
-  padding: 9px 7px 0 13px;
   min-height: 149px;
+  padding: 9px 7px 0 13px;
+
+  border: 1px solid $grey2;
+
+  color: $brown;
+
+  font-family: "Oswald", sans-serif;
 }
 
 .form__important {
+  width: 100%;
+
+  text-align: center;
+
+  color: $brown;
+
   font-family: "ArialMT", sans-serif;
   font-size: 14px;
   line-height: 10px;
-  color: $brown;
-  text-align: center;
-  width: 100%;
 }
 
 .form__button {
-  border: none;
   width: 280px;
   margin-bottom: 18px;
+
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -297,9 +329,10 @@
   }
 
   .form__title {
-    font-size: 36px;
     padding-right: 40px;
     padding-left: 40px;
+
+    font-size: 36px;
 
     &--contacts {
       width: 593px;
@@ -315,6 +348,7 @@
   .form__info {
     margin-bottom: 52px;
     padding: 0;
+
     border: none;
   }
 
@@ -325,13 +359,15 @@
 
   .form__info-field {
     height: 52px;
-    font-size: 20px;
     padding-left: 21px;
+
+    font-size: 20px;
   }
 
   .form__type-program {
     margin-bottom: 82px;
     padding: 32px 0 28px 28px;
+
     border: 1px solid $grey2;
 
     &::after {
@@ -353,6 +389,7 @@
     &::before {
       top: -5px;
       left: -1px;
+
       width: 40px;
       height: 40px;
     }
@@ -360,6 +397,7 @@
     &::after {
       top: 6px;
       left: 10px;
+
       width: 18px;
       height: 18px;
     }
@@ -408,6 +446,7 @@
   .form__contacts-field {
     height: 52px;
     padding-left: 20px;
+
     font-size: 20px;
   }
 
@@ -442,11 +481,13 @@
   }
 
   .form__important {
-    font-size: 16px;
+    align-self: center;
+
     width: 200px;
     margin-left: 53px;
+
     line-height: 20px;
-    align-self: center;
+    font-size: 16px;
   }
 }
 
@@ -459,6 +500,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     width: 100%;
   }
 
@@ -506,9 +548,10 @@
   }
 
   .form__contacts-wrapper {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+
+    width: 100%;
   }
 
   .form__contacts-item {

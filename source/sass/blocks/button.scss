@@ -1,19 +1,26 @@
 .button {
+  padding: 10px 0;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $white;
+  background-color: $green;
+
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: $white;
-  background-color: $green;
-  text-transform: uppercase;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
+
+  &--big {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .button {
     &--big {
       padding: 16px 0;
+
       font-size: 20px;
       line-height: 1;
     }

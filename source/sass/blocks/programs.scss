@@ -1,32 +1,41 @@
 .programs__item {
-  margin-bottom: 18px;
-  background-color: $grey;
-  padding: 31px 20px 22px 20px;
-  display: flex;
-  flex-wrap: wrap;
   position: relative;
 
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 18px;
+  padding: 31px 20px 22px 20px;
+
+  background-color: $grey;
 
   &::before {
+    content: "";
+
     position: absolute;
     top: 25px;
     left: 22px;
-    content: "";
+
     width: 50px;
     height: 50px;
+
     border-radius: 50%;
+
     background: $green;
   }
 
   &:first-child {
     &::after {
       content: "";
+
       position: absolute;
-      background: url("../img/icon-cat-slim.svg") no-repeat;
-      height: 49px;
-      width: 39px;
       top: 23px;
       left: 31px;
+
+      height: 49px;
+      width: 39px;
+
+      background: url("../img/icon-cat-slim.svg") no-repeat;
     }
   }
 
@@ -35,18 +44,22 @@
 
     &::after {
       content: "";
+
       position: absolute;
-      background: url("../img/icon-cat-pro.svg") no-repeat;
-      height: 28px;
-      width: 67px;
       top: 35px;
       left: 13px;
+
+      height: 28px;
+      width: 67px;
+
+      background: url("../img/icon-cat-pro.svg") no-repeat;
     }
   }
 }
 
 .programs__title {
   position: relative;
+
   margin: 0 0 31px 72px;
 }
 
@@ -54,23 +67,29 @@
   width: 100%;
   margin: 0;
   margin-bottom: 20px;
+
+  color: $brown;
+
   font-family: "ArialMT", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: $brown;
 }
 
 
 .programs__link {
   position: relative;
   order: 4;
+
   width: 100%;
   padding-top: 20px;
-  border-top: 1px solid $grey2;
-  font-size: 16px;
-  line-height: 16px;
+
   text-transform: uppercase;
   cursor: pointer;
+
+  border-top: 1px solid $grey2;
+
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .programs__link-image {
@@ -88,19 +107,22 @@
       transform: translateY(-50%);
       right: 61px;
       left: initial;
+
       width: 200px;
       height: 200px;
     }
 
     &:first-child {
       &::after {
-        background: url("../img/icon-cat-slim.svg") no-repeat;
-        height: 194px;
-        width: 141px;
         top: 175px;
         transform: translateY(-50%);
         right: 90px;
         left: initial;
+
+        height: 194px;
+        width: 141px;
+
+        background: url("../img/icon-cat-slim.svg") no-repeat;
       }
     }
 
@@ -108,13 +130,15 @@
       padding-right: 315px;
 
       &::after {
-        background: url("../img/icon-cat-pro.svg") no-repeat;
-        height: 113px;
-        width: 268px;
         top: 191px;
         transform: translateY(-50%);
         right: 29px;
         left: initial;
+
+        height: 113px;
+        width: 268px;
+
+        background: url("../img/icon-cat-pro.svg") no-repeat;
       }
     }
   }
@@ -126,16 +150,18 @@
   }
 
   .programs__description {
+    margin-bottom: 56px;
+
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 56px;
   }
 
   .programs__link {
-    font-size: 20px;
-    line-height: 20px;
     border: none;
     padding: 0;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .programs__link-image {
@@ -145,31 +171,36 @@
 
 @media (min-width: $desktop-width) {
   .programs__list {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+
+    width: 100%;
   }
 
   .programs__item {
+    position: relative;
+
     width: 570px;
     margin: 0;
-    position: relative;
     padding: 74px 54px 63px 53px;
 
     &::before {
       top: 95px;
       left: 52px;
+
       width: 100px;
       height: 100px;
     }
 
     &:first-child {
       &::after {
-        background: url("../img/icon-cat-slim.svg") no-repeat;
-        height: 97px;
-        width: 91px;
         top: 87px;
         left: 66px;
+
+        height: 97px;
+        width: 91px;
+
+        background: url("../img/icon-cat-slim.svg") no-repeat;
       }
     }
 
@@ -177,11 +208,13 @@
       padding-right: 54px;
 
       &::after {
-        background: url("../img/icon-cat-pro.svg") no-repeat;
-        height: 64px;
-        width: 134px;
         top: 99px;
         left: 34px;
+
+        height: 64px;
+        width: 134px;
+
+        background: url("../img/icon-cat-pro.svg") no-repeat;
       }
     }
   }
@@ -192,14 +225,16 @@
   }
 
   .programs__description {
+    margin-bottom: 31px;
+
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 31px;
   }
 
   .programs__link {
+    padding: 0;
+
     font-size: 20px;
     line-height: 20px;
-    padding: 0;
   }
 }

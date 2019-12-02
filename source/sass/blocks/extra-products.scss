@@ -3,22 +3,51 @@
   width: 100%;
 }
 
+.extra-products__title-wrapper {
+  position: relative;
+
+  margin-left: -20px;
+  margin-right: -20px;
+
+  &::after {
+    content: "";
+
+    z-index: -1;
+    position: absolute;
+    top: 19px;
+    right: 0;
+
+    width: 100vw;
+    height: 3px;
+
+    background: $green;
+  }
+}
+
 .extra-products__title {
+  display: inline-block;
+  vertical-align: baseline;
+
+  width: 266px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
+  padding: 0 20px 0 20px;
+
+  background: $white;
+
   font-size: 24px;
   font-weight: 400;
-  width: 100%;
 }
 
 .extra-products__item {
-  width: 100%;
-  margin: 0;
-  padding-top: 8px;
-  padding-bottom: 18px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  width: 100%;
+  margin: 0;
+  padding: 9px 0 18px 0;
+
   border-bottom: 1px solid $grey2;
 
   &:first-child {
@@ -28,28 +57,40 @@
 
 .extra-products__item-title {
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
 .extra-products__content-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: space-between;
+
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+.extra-products__description {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  margin: 0;
 }
 
 .extra-products__value,
 .extra-products__field {
+  width: 50%;
+
+  color: $brown;
+
   font-family: "ArialMT", sans-serif;
   font-size: 14px;
   line-height: 14px;
-  color: $brown;
-  width: 50%;
 }
 
 .extra-products__field {
-  width: 45px;
+  text-align: right;
 }
 
 .extra-products__link {
@@ -62,47 +103,44 @@
   }
 
   .extra-products__title-wrapper {
-    position: relative;
     margin-left: -30px;
     margin-right: -30px;
-    margin-bottom: 73px;
 
     &::before {
       content: "";
+
+      z-index: -1;
       position: absolute;
       top: 32px;
       left: 0;
+
       width: 100vw;
       height: 3px;
+
       background: $green;
-      z-index: -1;
     }
 
     &::after {
-      content: "";
-      position: absolute;
       top: 32px;
       right: 0;
+
       width: 100vw;
       height: 3px;
-      background: $green;
-      z-index: -1;
     }
   }
 
   .extra-products__title {
-    font-size: 36px;
     margin-left: 30px;
-    display: inline-block;
-    vertical-align: baseline;
-    background: $white;
-    padding-right: 20px;
+    margin-bottom: 72px;
     padding-left: 36px;
     width: 410px;
+
+    font-size: 36px;
   }
 
   .extra-products__item {
     padding: 25px 37px 26px 37px;
+
     border: 1px solid $grey2;
     border-bottom: 0;
 
@@ -113,12 +151,18 @@
 
   .extra-products__item-title {
     margin: 0;
+    width: 163px;
   }
 
   .extra-products__content-wrapper {
     flex-wrap: nowrap;
-    margin-bottom: 23px;
     align-items: baseline;
+
+    margin-bottom: 23px;
+  }
+
+  .extra-products__description {
+    width: 226px;
   }
 
   .extra-products__value,
@@ -128,13 +172,13 @@
   }
 
   .extra-products__value {
-    width: 215px;
-    margin-right: 55px;
+    width: 133px;
+
     text-align: right;
   }
 
   .extra-products__field {
-    width: 77px;
+    width: 47px;
   }
 }
 
@@ -146,32 +190,17 @@
   .extra-products__title-wrapper {
     margin-left: -40px;
     margin-right: -40px;
-    margin-bottom: 38px;
   }
 
   .extra-products__content-wrapper {
     margin: 0;
-    width: 611px;
+    width: 615px;
   }
 
   .extra-products__title {
     width: 410px;
     margin-left: 4px;
-
-    &::after {
-      content: "";
-      top: 105px;
-      right: -72px;
-      width: 875px;
-    }
-
-    &::before {
-      content: "";
-      top: 105px;
-      left: -76px;
-      width: 100px;
-      height: 3px;
-    }
+    margin-bottom: 73px;
   }
 
   .extra-products {
@@ -180,19 +209,26 @@
   }
 
   .extra-products__item {
-    padding: 16px 0 15px 0;
-    border: none;
-    border-bottom: 1px solid $grey2;
     flex-wrap: nowrap;
     align-items: baseline;
+
+    padding: 16px 0 15px 0;
+
+    border: none;
+    border-bottom: 1px solid $grey2;
   }
 
   .extra-products__item-title {
     width: 160px;
   }
 
+  .extra-products__description {
+    width: 291px;
+  }
+
   .extra-products__value {
     width: 134px;
+
     text-align: left;
   }
 

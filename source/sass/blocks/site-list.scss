@@ -1,15 +1,17 @@
 .site-list {
+  text-transform: uppercase;
+
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
-  text-transform: uppercase;
 }
 
 .site-list__item {
-  text-align: center;
-  border-bottom: 1px solid $grey2;
   margin-left: -20px;
   margin-right: -20px;
+
+  text-align: center;
+  border-bottom: 1px solid $grey2;
 
   &:first-child {
     border-top: 1px solid $grey2;
@@ -34,8 +36,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
     width: 100%;
+
     color: $black2;
+
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
@@ -54,11 +59,14 @@
 
       &::after {
         content: "";
+
         position: absolute;
         right: 0;
         bottom: -8px;
         left: 0;
+
         height: 3px;
+
         background: $green;
       }
     }
@@ -81,10 +89,13 @@
 
     &::after {
       content: "";
+
       right: 0;
       bottom: -12px;
       left: 0;
+
       height: 3px;
+
       background: $green;
     }
 

@@ -1,13 +1,29 @@
-.copyright {
+.copyright__link {
   display: flex;
   justify-content: space-between;
+
   width: 100%;
+
+  &:hover .copyright__icon {
+    path {
+      fill: $green;
+    }
+  }
+
+  &:focus {
+    opacity: 0.3;
+
+    path {
+      fill: $green;
+    }
+  }
 }
 
 .copyright__text {
+  color: $brown;
+
   font-family: "ArialMT", sans-serif;
   font-size: 16px;
-  color: $brown;
 }
 
 @media (min-width: $tablet-width) {

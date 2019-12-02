@@ -1,32 +1,42 @@
 .page-header {
-  width: 100%;
   position: relative;
+
+  width: 100%;
   padding-top: 11px;
 
 
   &--firstly {
     &::after {
       content: "";
+
       position: absolute;
       top: 100%;
       left: 0;
       z-index: -1;
+
       width: 100%;
-      height: 99%;
+      height: 305px;
+
       background-color: $green;
       background-image: url("../img/index-background-mobile1x.jpg");
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-mobile2x.jpg");
+      }
     }
   }
 }
 
 .page-header__wrapper {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  position: relative;
+  align-items: center;
 }
 
 .page-header__logo-image {
@@ -37,7 +47,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    padding-top: 43px;
+    padding-top: 23px;
 
     &::after {
       display: none;
@@ -46,32 +56,40 @@
 
   .page-header__logo-image {
     width: 174px;
+    height: 59px;
     margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding-top: 73px;
+    padding-top: 52px;
 
     &--firstly {
       &::after {
-        display: block;
         top: 0;
         right: 0;
         left: inherit;
+        display: block;
+
         width: 50%;
         min-height: 696px;
+
         background-color: $green;
         background-image: url("../img/index-background-desktop1x.jpg");
         background-size: cover;
         background-position: right;
         background-repeat: no-repeat;
+
+        @media (min-resolution: $retina-dppx) {
+          background-image: url("../img/index-background-desktop2x.jpg");
+        }
       }
     }
   }
 
   .page-header__logo-image {
     width: 203px;
+    height: 60px;
   }
 }
