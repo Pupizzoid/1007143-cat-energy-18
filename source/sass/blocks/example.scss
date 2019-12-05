@@ -103,11 +103,10 @@
 .example__image-wrapper {
   min-height: 265px;
   width: 100%;
-  background: url("../img/before-mobile1x.png") no-repeat;
+}
 
-  @media (min-resolution: $retina-dppx) {
-    background-image: url("../img/before-mobile2x.png.jpg");
-  }
+.example__image-after {
+  display: none;
 }
 
 .example__button {
@@ -238,14 +237,11 @@
     margin-top: 9px;
   }
 
-  .example__image-wrapper {
+  .example__image-before-wrapper {
     height: 532px;
-    background: url("../img/before-tablet1x.png");
-
-    @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/before-tablet2x.png.jpg");
-    }
+    width: 50%;
   }
+
 
   .example__button-wrapper {
     width: 600px;
@@ -288,19 +284,21 @@
     font-size: 20px;
   }
 
+
   .example__image-before {
-    width: 50%;
-    height: 449px;
+    width: 690px;
   }
 
-  .example__image-after {
+  .example__image-after-wrapper {
+    display: block;
     width: 50%;
-    height: 517px;
+    overflow: hidden;
   }
 
   .example__before,
   .example__after {
-    width: 64px;
+    width: 57px;
+    padding: 0;
 
     font-size: 20px;
   }
@@ -348,18 +346,18 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    padding-top: 20px;
-    padding-bottom: 67px;
+    padding: 0;
+    padding-bottom: 75px;
 
     border: none;
 
-    background: linear-gradient(to bottom, $white 0, $white 157px, $grey 157px, $grey 100%);
+    background: linear-gradient(to bottom, $white 0, $white 212px, $grey 212px, $grey 100%);
   }
 
   .example__title {
     width: 100%;
     margin: 0;
-    margin-bottom: 147px;
+    margin-bottom: 131px;
   }
 
   .example__text {
@@ -368,6 +366,11 @@
   }
 
   .example__description-wrapper {
+    width: 50%;
+    padding-right: 62px;
+  }
+
+  .example__button {
     width: 50%;
   }
 
@@ -378,6 +381,10 @@
 
   .example__result {
     padding: 17px 29px 21px 29px;
+  }
+
+  .example__price-wrapper {
+    margin: 0;
   }
 
   .example__price {
@@ -397,18 +404,17 @@
 
   .example__image-wrapper {
     min-height: 517px;
-    background: url("../img/before-desktop1x.png");
+  }
 
-    @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/before-desktop2x.png.jpg");
-    }
+  .example__button-wrapper {
+    justify-content: space-between;
+
+    width: 572px;
+    margin-left: auto;
+    margin-top: auto;
   }
 
   .example__wrapper {
-    width: 50%;
-  }
-
-  .example__button {
     width: 50%;
   }
 }
