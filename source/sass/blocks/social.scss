@@ -1,12 +1,48 @@
 .social__list {
-  width: 125px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  width: 125px;
   margin: 0 auto;
+}
+
+.social__icon {
+  fill: $brown;
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:focus {
+    fill: $green;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .social__list {
     width: 130px;
+  }
+
+  .social__item {
+    width: 30px;
+  }
+
+  .social__icon {
+    &--vkontakte {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 14px;
+      height: 28px;
+    }
   }
 }
