@@ -2,7 +2,7 @@
   position: relative;
 
   padding-bottom: 22px;
-  padding-top: 26px;
+  padding-top: 28px;
   width: 100%;
 }
 
@@ -50,6 +50,7 @@
 
 .promo__image {
   order: 2;
+  margin-bottom: -4px;
 }
 
 @media (min-width: $tablet-width) {

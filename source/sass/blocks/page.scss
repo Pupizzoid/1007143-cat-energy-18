@@ -3,8 +3,8 @@
 }
 
 .page__title {
-  margin-top: 15px;
-  margin-bottom: 25px;
+  margin-top: 17px;
+  margin-bottom: 30px;
 }
 
 .page__intro {
@@ -19,7 +19,7 @@
 
 @media (min-width: $tablet-width) {
   .page__title {
-    margin: 54px 0;
+    margin: 39px 0;
 
     &--tablet {
       margin-left: -40px;
@@ -38,8 +38,8 @@
 
 @media (min-width: $desktop-width) {
   .page__title {
-    margin-top: 71px;
-    margin-bottom: 56px;
+    margin-top: 57px;
+    margin-bottom: 39px;
 
     &--tablet {
       margin-left: 0;

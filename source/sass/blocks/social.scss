@@ -7,8 +7,28 @@
   margin: 0 auto;
 }
 
+.social__item {
+  width: 22px;
+  align-self: center;
+}
+
 .social__icon {
   fill: $brown;
+
+  &--vkontakte {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--instagram {
+    width: 17px;
+    height: 17px;
+  }
+
+  &--facebook {
+    width: 10px;
+    height: 19px;
+  }
 
   &:hover {
     fill: $green;

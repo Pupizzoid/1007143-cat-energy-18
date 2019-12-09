@@ -154,6 +154,15 @@
   &--all {
     background-color: $grey;
     color: $brown;
+
+    &:hover {
+      background-color: $white-three;
+    }
+
+    &:focus {
+      background-color: $white-three;
+      color: $greyish-brown-30;
+    }
   }
 }
 

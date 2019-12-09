@@ -5,7 +5,7 @@
   flex-wrap: wrap;
 
   margin-bottom: 18px;
-  padding: 31px 20px 22px 20px;
+  padding: 31px 20px 19px 20px;
 
   background-color: $grey;
 
@@ -78,10 +78,12 @@
 
 .programs__link {
   position: relative;
+  display: block;
   order: 4;
 
   width: 100%;
   padding-top: 20px;
+  padding-bottom: 3px;
 
   text-transform: uppercase;
   cursor: pointer;
@@ -90,11 +92,27 @@
 
   font-size: 16px;
   line-height: 16px;
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 22px;
+    left: 123px;
+    width: 24px;
+    height: 11px;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat center;
+  }
 }
 
-.programs__link-image {
-  margin-left: 7px;
-  padding-bottom: 3px;
+.programs__link:hover::after {
+  width: 33px;
+  height: 11px;
+  background: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
 }
 
 @media (min-width: $tablet-width) {
@@ -162,10 +180,11 @@
 
     font-size: 20px;
     line-height: 20px;
-  }
 
-  .programs__link-image {
-    margin-left: 20px;
+    &::after {
+      top: 5px;
+      right: -19px;
+    }
   }
 }
 

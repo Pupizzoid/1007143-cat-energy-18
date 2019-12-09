@@ -23,11 +23,11 @@
   padding: 23px 0;
 
   &:hover {
-    color: $black3;
+    color: $black-middle;
   }
 
-  &focus {
-    color: $black4;
+  &:focus {
+    color: $black-light;
   }
 }
 
@@ -109,8 +109,24 @@
   .site-list__link {
     color: $white;
 
+    &:hover {
+      color: $white-middle;
+    }
+
+    &:focus {
+      color: $white-light;
+    }
+
     &--primary {
       color: $black;
+
+      &:hover {
+        color: $black-middle;
+      }
+
+      &:focus {
+        color: $black-light;
+      }
     }
   }
 }

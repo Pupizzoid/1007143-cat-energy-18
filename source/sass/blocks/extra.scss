@@ -60,39 +60,71 @@
 
 .extra__field {
   position: absolute;
-  z-index: -1;
+  top: 0;
+  left: 0;
 
-  margin: 10px 0 0 7px;
+  width: 30px;
+  height: 30px;
 
   opacity: 0;
 }
 
-.extra__custom {
+.extra__item {
   position: relative;
 
-  padding: 0 0 0 46px;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.extra__value {
+  display: block;
+  padding-left: 46px;
 
   cursor: pointer;
 
-  &::before {
+  &::after {
     content: "";
 
     position: absolute;
-    top: -2px;
+    left: 5px;
+    top: 4px;
+
+    height: 20px;
+    width: 20px;
+
+    background: url("../img/icon-tick.svg") no-repeat center;
+
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
     left: 0;
-
-    width: 30px;
-    height: 30px;
-
+    top: -1px;
     border: 1px solid $grey2;
+    height: 30px;
+    width: 30px;
+  }
 
-    background: $white;
+  &:hover {
+    &::before {
+      border: 1px solid $grey4;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
-.extra__field:checked + .extra__custom::before {
-  background: url("../img/icon-tick.svg") no-repeat center;
-  background-size: 20px;
+.extra__field:checked + .extra__value::after {
+  opacity: 1;
+}
+
+.extra__field:focus ~ .extra__value::before {
+  outline: 1px solid grey;
 }
 
 .extra__list {
@@ -108,14 +140,9 @@
   list-style: none;
 }
 
-.extra__item {
-  width: 100%;
-  margin-bottom: 19px;
-}
-
 @media (min-width: $tablet-width) {
   .extra {
-    margin-bottom: 14px;
+    margin-bottom: 18px;
     padding: 0;
   }
 
@@ -144,29 +171,34 @@
 
   .extra__item {
     width: 286px;
-    margin-bottom: 48px;
+    margin-bottom: 52px;
 
     &:nth-last-child(-n+2) {
       margin: 0;
     }
   }
 
-  .extra__custom {
+  .extra__value {
     padding: 0 0 0 60px;
 
     &::before {
-      top: -2px;
+      top: -8px;
       left: 0;
 
       width: 40px;
       height: 40px;
+    }
+
+    &::after {
+      top: 2px;
+      left: 11px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .extra {
-    margin-bottom: 29px;
+    margin-bottom: 34px;
   }
 
   .extra__list {

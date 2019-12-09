@@ -87,13 +87,26 @@
   height: 45px;
   padding-left: 16px;
 
-  border: 1px solid $grey2;
+  border: 1px solid $grey-light;
   text-transform: uppercase;
+  cursor: pointer;
 
   color: $brown;
 
   font-family: "Oswald", sans-serif;
   font-size: 16px;
+
+  &:hover {
+    border: 1px solid $grey2;
+  }
+
+  &:focus {
+    outline: 2px solid $brown;
+  }
+
+  &:focus:invalid {
+    outline: 2px solid #ff8282;
+  }
 }
 
 .form__info-value {
@@ -116,7 +129,7 @@
 }
 
 .form__type-program {
-  padding: 34px 0 25px 0;
+  padding: 28px 0 25px 0;
   margin-bottom: 4px;
   width: 100%;
 
@@ -124,9 +137,8 @@
 }
 
 .form__program-item {
+  margin-bottom: 9px;
   position: relative;
-
-  margin-bottom: 18px;
 
   &:last-child {
     margin: 0;
@@ -135,22 +147,31 @@
 
 .form__program-field {
   position: absolute;
-  z-index: -1;
-
+  top: 0;
+  left: 0;
   opacity: 0;
+
+  height: 30px;
+  width: 30px;
 }
 
-.form__program-custom {
-  position: relative;
-  padding-right: 44px;
+.form__program-value {
+  display: block;
+  padding: 5px 0;
+  margin-left: 44px;
+
   cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::before {
     content: "";
 
     position: absolute;
-    top: -3px;
-    left: -1px;
+    top: 2px;
+    left: -48px;
 
     width: 30px;
     height: 30px;
@@ -165,8 +186,10 @@
     content: "";
 
     position: absolute;
-    top: 6px;
-    left: 8px;
+    top: 11px;
+    left: -38px;
+
+    opacity: 0;
 
     width: 12px;
     height: 12px;
@@ -174,65 +197,53 @@
     border-radius: 50%;
 
     background: $green;
-    opacity: 0;
+  }
+
+  &:hover {
+    &::before {
+      border: 1px solid $grey4;
+    }
   }
 }
 
-.form__program-field:checked + .form__program-custom::after {
+.form__program-field:checked + .form__program-value::after {
   opacity: 1;
 }
 
-.form__program-value:focus {
-  opacity: 0.3;
+.form__program-field:focus ~ .form__program-value::before {
+  outline: 1px solid grey;
 }
 
 .form__contacts {
   margin-bottom: 14px;
   width: 100%;
   padding: 0;
-  padding-top: 24px;
+  padding-top: 18px;
 
   border: 0;
 }
 
 .form__contacts-item {
   position: relative;
-
   display: flex;
 
   margin: 0;
   margin-bottom: 14px;
+}
+
+.form__contacts-icon {
+  position: absolute;
+  top: 13px;
+  right: 12px;
 
   &--mail {
-    &::after {
-      content: "";
-
-      position: absolute;
-      top: 15px;
-      right: 12px;
-
-      width: 18px;
-      height: 14px;
-
-      background: url("../img/icon-mail.svg") no-repeat;
-      opacity: 0.5;
-    }
+    width: 18px;
+    height: 14px;
   }
 
   &--phone {
-    &::after {
-      content: "";
-
-      position: absolute;
-      top: 12px;
-      right: 12px;
-
-      width: 21px;
-      height: 21px;
-
-      background: url("../img/icon-phone.svg") no-repeat;
-      opacity: 0.5;
-    }
+    width: 21px;
+    height: 21px;
   }
 }
 
@@ -252,21 +263,42 @@
   }
 }
 
+
 .form__contacts-field {
   flex-grow: 1;
 
   height: 45px;
   padding-left: 16px;
 
-  border: 1px solid $grey2;
+  border: 1px solid $grey-light;
   text-transform: uppercase;
+  cursor: pointer;
 
   color: $brown;
 
   font-family: "Oswald", sans-serif;
   font-size: 16px;
-}
 
+  &:hover {
+    border: 1px solid $grey2;
+  }
+
+  &:focus {
+    outline: 2px solid $brown;
+  }
+
+  &:focus ~ svg {
+    fill: $green;
+  }
+
+  &:focus:invalid {
+    outline: 2px solid #ff8282;
+  }
+
+  &:focus:invalid ~ svg {
+    fill: #ff8282;
+  }
+}
 
 .form__comment {
   position: relative;
@@ -282,7 +314,7 @@
   min-height: 149px;
   padding: 9px 7px 0 13px;
 
-  border: 1px solid $grey2;
+  border: 1px solid $grey-light;
 
   color: $brown;
 
@@ -366,9 +398,9 @@
 
   .form__type-program {
     margin-bottom: 82px;
-    padding: 32px 0 28px 28px;
+    padding: 27px 0 28px 28px;
 
-    border: 1px solid $grey2;
+    border: 1px solid $grey-light;
 
     &::after {
       display: none;
@@ -380,22 +412,22 @@
   }
 
   .form__program-item {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 
-  .form__program-custom {
-    padding-right: 56px;
+  .form__program-value {
+    padding-left: 14px;
 
     &::before {
-      top: -5px;
-      left: -1px;
+      top: -4px;
+      left: -2px;
 
       width: 40px;
       height: 40px;
     }
 
     &::after {
-      top: 6px;
+      top: 8px;
       left: 10px;
 
       width: 18px;
@@ -425,22 +457,16 @@
     padding: 0;
   }
 
+  .form__contacts-icon {
+    &--mail,
+    &--phone {
+      top: 18px;
+      right: 19px;
+    }
+  }
+
   .form__contacts-item {
     margin-bottom: 20px;
-
-    &--mail {
-      &::after {
-        top: 20px;
-        right: 20px;
-      }
-    }
-
-    &--phone {
-      &::after {
-        top: 18px;
-        right: 17px;
-      }
-    }
   }
 
   .form__contacts-field {
@@ -455,7 +481,7 @@
 
     &--first {
       width: 62px;
-      margin-right: 24px;
+      margin-right: 18px;
     }
 
     &--second {
@@ -516,6 +542,7 @@
 
   .form__info {
     width: 570px;
+    margin-bottom: 56px;
   }
 
   .form__info-value {
@@ -540,11 +567,23 @@
   }
 
   .form__program-item {
-    margin-bottom: 33px;
+    margin-bottom: 24px;
+  }
+
+  .form__program-value {
+    &::before {
+      top: -4px;
+      left: 2px;
+    }
+
+    &::after {
+      top: 8px;
+      left: 13px;
+    }
   }
 
   .form__contacts {
-    margin-bottom: 71px;
+    margin-bottom: 74px;
   }
 
   .form__contacts-wrapper {
