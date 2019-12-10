@@ -3,12 +3,32 @@
   justify-content: space-between;
   align-items: center;
 
-  width: 125px;
+  width: 137px;
   margin: 0 auto;
+}
+
+.social__item {
+  width: 22px;
+  align-self: center;
 }
 
 .social__icon {
   fill: $brown;
+
+  &--vkontakte {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--instagram {
+    width: 17px;
+    height: 17px;
+  }
+
+  &--facebook {
+    width: 10px;
+    height: 19px;
+  }
 
   &:hover {
     fill: $green;
@@ -22,11 +42,11 @@
 
 @media (min-width: $tablet-width) {
   .social__list {
-    width: 130px;
+    width: 100%;
   }
 
   .social__item {
-    width: 30px;
+    width: 29px;
   }
 
   .social__icon {

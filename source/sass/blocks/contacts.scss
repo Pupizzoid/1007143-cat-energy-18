@@ -2,8 +2,10 @@
   background: $grey;
 }
 
-.contacts__wrapper--primary {
-  background: $white;
+.contacts__wrapper {
+  &--primary {
+    background: $white;
+  }
 }
 
 .contacts__details {
@@ -11,10 +13,6 @@
   justify-content: space-between;
 
   padding: 28px 6px 28px 0;
-
-  &--primary {
-    background: $white;
-  }
 }
 
 .contacts__promo {
@@ -52,7 +50,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts__details {
-    padding: 64px 41px 58px 41px;
+    padding: 66px 41px 57px 41px;
   }
 
   .contacts__promo {

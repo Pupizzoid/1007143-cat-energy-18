@@ -10,20 +10,21 @@
 }
 
 .copyright__icon {
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
+  margin-right: -5px;
 
   fill: $brown;
 
   &:hover,
   &:focus {
-    path {
-      fill: $green;
-    }
+    fill: $green;
   }
 }
 
 .copyright__text {
+  align-self: center;
+
   color: $brown;
 
   font-family: "ArialMT", sans-serif;

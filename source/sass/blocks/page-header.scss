@@ -2,7 +2,8 @@
   position: relative;
 
   width: 100%;
-  padding-top: 11px;
+  padding-top: 12px;
+  border-bottom: 1px solid $white-five;
 
 
   &--firstly {
@@ -43,11 +44,20 @@
   height: 39px;
   width: 191px;
   margin-bottom: 4.6%;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     padding-top: 23px;
+    border: none;
 
     &::after {
       display: none;
