@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
 
-  width: 125px;
+  width: 137px;
   margin: 0 auto;
 }
 
@@ -42,11 +42,11 @@
 
 @media (min-width: $tablet-width) {
   .social__list {
-    width: 130px;
+    width: 100%;
   }
 
   .social__item {
-    width: 30px;
+    width: 29px;
   }
 
   .social__icon {

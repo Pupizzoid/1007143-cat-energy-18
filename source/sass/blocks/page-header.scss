@@ -3,6 +3,7 @@
 
   width: 100%;
   padding-top: 12px;
+  border-bottom: 1px solid $white-five;
 
 
   &--firstly {
@@ -56,6 +57,7 @@
 @media (min-width: $tablet-width) {
   .page-header {
     padding-top: 23px;
+    border: none;
 
     &::after {
       display: none;

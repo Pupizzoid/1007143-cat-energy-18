@@ -1,7 +1,7 @@
 .extra {
   width: 100%;
   padding: 0;
-  margin-bottom: 19px;
+  margin-bottom: 40px;
 
   border: 0;
 }
@@ -74,6 +74,10 @@
 
   margin-bottom: 18px;
   width: 100%;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .extra__value {

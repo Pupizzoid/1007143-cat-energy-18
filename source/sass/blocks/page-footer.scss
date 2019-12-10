@@ -40,7 +40,7 @@
 
 .page-footer__copyright {
   width: 100%;
-  padding-top: 28px;
+  padding-top: 17px;
   padding-bottom: 31px;
 }
 
@@ -67,7 +67,12 @@
 
 
   .page-footer__logo {
-    width: 128px;
+    width: 163px;
+  }
+
+  .page-footer__logo-image {
+    margin-right: auto;
+    display: inline-block;
   }
 
   .page-footer__social {
@@ -75,6 +80,6 @@
   }
 
   .page-footer__copyright {
-    width: 170px;
+    width: 163px;
   }
 }
