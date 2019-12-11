@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог товаров</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
 
@@ -327,16 +327,16 @@
             <span class="contacts__city">Санкт-Петербург</span></p>
           </div>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map" id="map"></div>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo">
-            <svg class="page-footer__logo-image" width="128" height="24">
-              <use xlink:href="img/sprite.svg#logo-footer"></use>
-            </svg>
+          <svg class="page-footer__logo-image" width="128" height="24">
+            <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+          </svg>
         </div>
         <div class="page-footer__social social">
           <ul class="social__list reset">
@@ -367,7 +367,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип htmlacademy">
               <span class="copyright__text">HTML Academy</span>
               <svg class="copyright__icon" width="27" height="34">
-                <use xlink:href="img/sprite.svg#htmlacademy"></use>
+                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
               </svg>
             </a>
         </div>
@@ -377,5 +377,7 @@
     <script src="js/picturefill.js"></script>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKSwPt7bJ8xrI76hkncI4fTTrC_2zTjJY&callback=initMap"></script>
   </body>
 </html>

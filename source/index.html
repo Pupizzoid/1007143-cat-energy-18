@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Интернет-магазин Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-header page-header--firstly">
       <div class="page-header__wrapper container">
@@ -109,15 +113,18 @@
               <p class="example__price">Затраты на питание: <span class="example__price-value">15 000 руб.</span></p>
             </div>
           </div>
-          <div class="example__button">
+          <div class="example__demo">
             <div class="example__image-wrapper wrapper">
-              <picture>
+              <div class=" example__image example__image--before"></div>
+              <div class="example__image example__image--after"></div>
+
+              <!-- <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop1x.webp 1x, img/before-desktop2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet1x.webp 1x, img/before-tablet2x.webp 2x">
                 <source type="image/webp" srcset="img/before-mobile1x.webp 1x, img/before-mobile2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="img/before-desktop1x.png 1x, img/before-desktop2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet1x.png 1x, img/before-tablet2x.png 2x">
-                <img class="example__image-before" src="img/before-mobile1x.png"  srcset="img/before-mobile2x.png 2x" width="320" height="240" alt="Фото до программы">
+                <img class="example__image-before" src="img/before-mobile1x.png" srcset="img/before-mobile2x.png 2x" width="320" height="240" alt="Фото до программы">
               </picture>
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop1x.webp 1x, img/after-desktop2x.webp 2x">
@@ -125,10 +132,10 @@
                 <source type="image/webp" srcset="img/after-mobile1x.webp 1x, img/after-mobile2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="./img/after-desktop1x.png 1x, img/after-desktop2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet1x.png 1x, img/after-tablet2x.png 2x">
-                <img class="example__image-after" src="img/after-mobile1x.png"  srcset="img/after-mobile2x.png 2x" width="320" height="240" alt="Фото до программы">
-              </picture>
+                <img class="example__image-after" src="img/after-mobile1x.png" srcset="img/after-mobile2x.png 2x" width="320" height="240" alt="Фото до программы">
+              </picture> -->
             </div>
-              <div class="example__button-wrapper">
+            <div class="example__button-wrapper">
               <button class="example__before" type="button">Было</button>
               <div class="example__track">
                   <span class="example__cursor"></span>
@@ -158,7 +165,7 @@
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo">
             <svg class="page-footer__logo-image" width="128" height="24">
-              <use xlink:href="img/sprite.svg#logo-footer"></use>
+              <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
             </svg>
         </div>
         <div class="page-footer__social social">
@@ -190,7 +197,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип htmlacademy">
               <span class="copyright__text">HTML Academy</span>
               <svg class="copyright__icon" width="27" height="34">
-                <use xlink:href="img/sprite.svg#htmlacademy"></use>
+                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
               </svg>
             </a>
         </div>
@@ -204,5 +211,6 @@
     </script>
     <script src="js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKSwPt7bJ8xrI76hkncI4fTTrC_2zTjJY&callback=initMap"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
