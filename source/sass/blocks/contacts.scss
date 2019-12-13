@@ -107,12 +107,13 @@
   }
 
   .contacts__details {
+    z-index: 1;
     position: absolute;
     top: 94px;
     left: 40px;
 
     width: 570px;
-    padding: 66px 89px 57px 76px;
+    padding: 59px 89px 57px 76px;
 
     background: $white;
   }
