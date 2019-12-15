@@ -56,6 +56,21 @@
 
   &:last-child {
     justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 27px;
+      left: 45%;
+
+      width: 31px;
+      height: 31px;
+
+      opacity: 0.2;
+      background: url("../img/icon-plus-mobile.svg") no-repeat center;
+    }
   }
 }
 
@@ -115,26 +130,20 @@
 .products__intro {
   margin-top: 78px;
   margin-bottom: 6px;
-  position: relative;
+  width: 100%;
 
-  &::before {
-    content: "";
-
-    position: absolute;
-    top: -52px;
-    left: 86px;
-
-    width: 31px;
-    height: 31px;
-
-    opacity: 0.2;
-    background: url("../img/icon-plus-mobile.svg") no-repeat center;
-  }
+  text-align: center;
 }
 
 .products__text {
   margin: 0;
   margin-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+
+  text-align: center;
+
 
   color: $brown;
 
@@ -234,10 +243,21 @@
     &:last-child {
       padding: 165px 38px 40px 38px;
 
-      text-align: center;
       border: 1px solid $grey2;
 
       background: $white;
+
+      &::before {
+        content: "";
+
+        top: 54px;
+        left: 41%;
+
+        width: 61px;
+        height: 61px;
+
+        background: url("../img/icon-plus.svg") no-repeat center;
+      }
     }
   }
 
@@ -298,7 +318,6 @@
 
   .products__text {
     margin: 0 0 81px;
-    width: 169px;
 
     font-size: 16px;
     line-height: 20px;
@@ -308,22 +327,10 @@
     display: inline-block;
     vertical-align: center;
 
-    width: 140px;
     margin: 0;
-    margin-bottom: 25px;
-
-
-    &::before {
-      content: "";
-
-      top: -110px;
-      left: 41px;
-
-      width: 61px;
-      height: 61px;
-
-      background: url("../img/icon-plus.svg") no-repeat center;
-    }
+    margin-bottom: 23px;
+    padding-left: 42px;
+    padding-right: 39px;
   }
 
   .products__wrapper {
@@ -361,8 +368,8 @@
       &::before {
         content: "";
 
-        top: 53px;
-        left: 92px;
+        top: 55px;
+        left: 37%;
       }
     }
 
@@ -390,6 +397,15 @@
 
     width: 100%;
     padding-bottom: 86px;
+  }
+
+  .products__intro {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .products__text {
+    padding: 0;
   }
 
   .products__section-wrapper {
