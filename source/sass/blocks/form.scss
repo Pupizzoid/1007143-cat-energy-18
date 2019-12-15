@@ -336,6 +336,12 @@
   font-family: "Oswald", sans-serif;
 }
 
+.form__button-wrapper {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .form__important {
   display: inline-block;
 
@@ -531,6 +537,8 @@
 
   .form__button-wrapper {
     width: 100%;
+    padding-right: 66px;
+    padding-left: 70px;
   }
 
   .form__button {
@@ -659,6 +667,13 @@
   .form__comment {
     width: 100%;
     margin-bottom: 71px;
+  }
+
+  .form__button-wrapper {
+    max-width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
   }
 
   .form__button {
