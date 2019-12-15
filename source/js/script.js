@@ -1,7 +1,7 @@
 // Карта
 
 var map;
-var image = "../img/map-pin.png";
+var image = "build/img/map-pin.png";
 var lat;
 var lng;
 
