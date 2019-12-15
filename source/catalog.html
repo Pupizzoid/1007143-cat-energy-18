@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Каталог товаров</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/Oswald-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Oswald-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ArialMT.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -35,234 +38,234 @@
     </header>
 
     <main class="page">
-      <div class=" container">
-        <section class="products">
-          <h1 class="products__title title">Каталог продукции</h1>
-          <ul class="products__list">
-            <li class="products__item">
-              <a class="products__link-image" href="#">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop1x.webp 1x, img/chicken-small-desktop2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet1x.webp 1x, img/chicken-small-tablet2x.webp 2x">
-                  <source type="image/webp" srcset="img/chicken-small-mobile1x.webp 1x, img/chicken-small-mobile2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop1x.png 1x, img/chicken-small-desktop2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/chicken-small-tablet1x.png 1x, img/chicken-small-tablet2x.png 2x">
-                  <img class="products__image" src="img/chicken-small-mobile1x.jpg" srcset="img/chicken-small-mobile2x.jpg 2x" alt="Фото товара" width="140" height="144">
-                </picture>
-              </a>
-              <table class="products__table">
-                <caption class="products__caption title-description"><a href="#">Cat Energy PRO 500 г</a></caption>
-                <tbody class="products__table-list">
-                  <tr class="products__table-item">
-                    <td class="products__value">Объем</td>
-                    <td class="products__field">500 г</td>
-                  </tr>
-                  <tr class="products__table-item">
-                    <td class="products__value">Вкус</td>
-                    <td class="products__field">Курица</td>
-                  </tr>
-                  <tr class="products__table-item">
-                    <td class="products__value">Цена</td>
-                    <td class="products__field">700 Р.</td>
-                  </tr>
+      <section class="products container">
+        <h1 class="products__title title">Каталог продукции</h1>
+        <ul class="products__list">
+          <li class="products__item">
+            <a class="products__link-image" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop1x.webp 1x, img/chicken-small-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet1x.webp 1x, img/chicken-small-tablet2x.webp 2x">
+                <source type="image/webp" srcset="img/chicken-small-mobile1x.webp 1x, img/chicken-small-mobile2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop1x.png 1x, img/chicken-small-desktop2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/chicken-small-tablet1x.png 1x, img/chicken-small-tablet2x.png 2x">
+                <img class="products__image" src="img/chicken-small-mobile1x.jpg" srcset="img/chicken-small-mobile2x.jpg 2x" alt="Фото товара" width="140" height="144">
+              </picture>
+            </a>
+            <table class="products__table">
+              <caption class="products__caption title-description"><a href="#">Cat Energy PRO 500 г</a></caption>
+              <tbody class="products__table-list">
+                <tr class="products__table-item">
+                  <td class="products__value">Объем</td>
+                  <td class="products__field">500 г</td>
+                </tr>
+                <tr class="products__table-item">
+                  <td class="products__value">Вкус</td>
+                  <td class="products__field">Курица</td>
+                </tr>
+                <tr class="products__table-item">
+                  <td class="products__value">Цена</td>
+                  <td class="products__field">700 Р.</td>
+                </tr>
+            </tbody>
+            </table>
+            <a class="products__link button" href="#">Заказать</a>
+          </li>
+          <li class="products__item">
+            <a class="products__link-image" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop1x.webp 1x, img/chicken-big-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet1x.webp 1x, img/chicken-big-tablet2x.webp 2x">
+                <source type="image/webp" srcset="img/chicken-big-mobile1x.webp 1x, img/chicken-big-mobile2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop1x.png 1x, img/chicken-big-desktop2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/chicken-big-tablet1x.png 1x, img/chicken-big-tablet2x.png 2x">
+                <img class="products__image" src="img/chicken-big-mobile1x.jpg" srcset="img/chicken-big-mobile2x.jpg 2x" alt="Фото товара" width="140" height="144">
+              </picture>
+            </a>
+            <table class="products__table">
+              <caption class="products__caption title-description"><a href="#">Cat Energy PRO 1000 г</a></caption>
+              <tbody class="products__table-list">
+                <tr class="products__table-item">
+                  <td class="products__value">Объем</td>
+                  <td class="products__field">1000 г</td>
+                </tr>
+                <tr class="products__table-item">
+                  <td class="products__value">Вкус</td>
+                  <td class="products__field">Курица</td>
+                </tr>
+                <tr class="products__table-item">
+                  <td class="products__value">Цена</td>
+                  <td class="products__field">1000 Р.</td>
+                </tr>
               </tbody>
-              </table>
-              <a class="products__link button" href="#">Заказать</a>
-            </li>
-            <li class="products__item">
-              <a class="products__link-image" href="#">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop1x.webp 1x, img/chicken-big-desktop2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet1x.webp 1x, img/chicken-big-tablet2x.webp 2x">
-                  <source type="image/webp" srcset="img/chicken-big-mobile1x.webp 1x, img/chicken-big-mobile2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop1x.png 1x, img/chicken-big-desktop2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/chicken-big-tablet1x.png 1x, img/chicken-big-tablet2x.png 2x">
-                  <img class="products__image" src="img/chicken-big-mobile1x.jpg" srcset="img/chicken-big-mobile2x.jpg 2x" alt="Фото товара" width="140" height="144">
-                </picture>
-              </a>
-              <table class="products__table">
-                <caption class="products__caption title-description"><a href="#">Cat Energy PRO 1000 г</a></caption>
-                <tbody class="products__table-list">
-                  <tr class="products__table-item">
-                    <td class="products__value">Объем</td>
-                    <td class="products__field">1000 г</td>
-                  </tr>
-                  <tr class="products__table-item">
-                    <td class="products__value">Вкус</td>
-                    <td class="products__field">Курица</td>
-                  </tr>
-                  <tr class="products__table-item">
-                    <td class="products__value">Цена</td>
+            </table>
+            <a class="products__link button" href="#">Заказать</a>
+          </li>
+          <li class="products__item">
+            <a class="products__link-image" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop1x.webp 1x, img/fish-small-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet1x.webp 1x, img/fish-small-tablet2x.webp 2x">
+                <source type="image/webp" srcset="img/fish-small-mobile1x.webp 1x, img/fish-small-mobile2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/fish-small-desktop1x.png 1x, img/fish-small-desktop2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/fish-small-tablet1x.png 1x, img/fish-small-tablet2x.png 2x">
+                <img class="products__image" src="img/fish-small-mobile1x.jpg" srcset="img/fish-small-mobile2x.jpg 2x" alt="Фото товара" width="140" height="144">
+              </picture>
+            </a>
+            <table class="products__table">
+              <caption class="products__caption title-description"><a href="#">Cat Energy PRO 500 г</a></caption>
+              <tbody class="products__table-list">
+                <tr class="products__table-item">
+                  <td class="products__value">Объем</td>
+                  <td class="products__field">500 г</td>
+                </tr>
+                <tr class="products__table-item">
+                  <td class="products__value">Вкус</td>
+                  <td class="products__field">Рыба</td>
+                </tr>
+                <tr class="products__table-item">
+                  <td class="products__value">Цена</td>
+                  <td class="products__field">700 Р.</td>
+                </tr>
+              </tbody>
+            </table>
+            <a class="products__link button" href="#">Заказать</a>
+          </li>
+          <li class="products__item">
+            <a class="products__link-image" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop1x.webp 1x, img/fish-big-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet1x.webp 1x, img/fish-big-tablet2x.webp 2x">
+                <source type="image/webp" srcset="img/fish-big-mobile1x.webp 1x, img/fish-big-mobile2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/fish-big-desktop1x.png 1x, img/fish-big-desktop2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/fish-big-tablet1x.png 1x, img/fish-big-tablet2x.png 2x">
+                <img class="products__image" src="img/fish-big-mobile1x.jpg" srcset="img/fish-big-mobile2x.jpg 2x" alt="Фото товара" width="140" height="144">
+              </picture>
+            </a>
+            <table class="products__table">
+              <caption class="products__caption title-description"><a href="#">Cat Energy PRO 1000 г</a></caption>
+              <tbody class="products__table-list">
+                <tr class="products__table-item">
+                  <td class="products__value">Объем</td>
+                  <td class="products__field">1000 г</td>
+                </tr>
+                <tr class="products__table-item">
+                  <td class="products__value">Вкус</td>
+                  <td class="products__field">Рыба</td>
+                </tr>
+                <tr class="products__table-item">
+                  <td class="products__value">Цена</td>
                     <td class="products__field">1000 Р.</td>
-                  </tr>
-                </tbody>
-              </table>
-              <a class="products__link button" href="#">Заказать</a>
-            </li>
-            <li class="products__item">
-              <a class="products__link-image" href="#">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop1x.webp 1x, img/fish-small-desktop2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet1x.webp 1x, img/fish-small-tablet2x.webp 2x">
-                  <source type="image/webp" srcset="img/fish-small-mobile1x.webp 1x, img/fish-small-mobile2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/fish-small-desktop1x.png 1x, img/fish-small-desktop2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/fish-small-tablet1x.png 1x, img/fish-small-tablet2x.png 2x">
-                  <img class="products__image" src="img/fish-small-mobile1x.jpg" srcset="img/fish-small-mobile2x.jpg 2x" alt="Фото товара" width="140" height="144">
-                </picture>
-              </a>
-              <table class="products__table">
-                <caption class="products__caption title-description"><a href="#">Cat Energy PRO 500 г</a></caption>
-                <tbody class="products__table-list">
-                  <tr class="products__table-item">
-                    <td class="products__value">Объем</td>
-                    <td class="products__field">500 г</td>
-                  </tr>
-                  <tr class="products__table-item">
-                    <td class="products__value">Вкус</td>
-                    <td class="products__field">Рыба</td>
-                  </tr>
-                  <tr class="products__table-item">
-                    <td class="products__value">Цена</td>
-                    <td class="products__field">700 Р.</td>
-                  </tr>
-                </tbody>
-              </table>
-              <a class="products__link button" href="#">Заказать</a>
-            </li>
-            <li class="products__item">
-              <a class="products__link-image" href="#">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop1x.webp 1x, img/fish-big-desktop2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet1x.webp 1x, img/fish-big-tablet2x.webp 2x">
-                  <source type="image/webp" srcset="img/fish-big-mobile1x.webp 1x, img/fish-big-mobile2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/fish-big-desktop1x.png 1x, img/fish-big-desktop2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/fish-big-tablet1x.png 1x, img/fish-big-tablet2x.png 2x">
-                  <img class="products__image" src="img/fish-big-mobile1x.jpg" srcset="img/fish-big-mobile2x.jpg 2x" alt="Фото товара" width="140" height="144">
-                </picture>
-              </a>
-              <table class="products__table">
-                <caption class="products__caption title-description"><a href="#">Cat Energy PRO 1000 г</a></caption>
-                <tbody class="products__table-list">
-                  <tr class="products__table-item">
-                    <td class="products__value">Объем</td>
-                    <td class="products__field">1000 г</td>
-                  </tr>
-                  <tr class="products__table-item">
-                    <td class="products__value">Вкус</td>
-                    <td class="products__field">Рыба</td>
-                  </tr>
-                  <tr class="products__table-item">
-                    <td class="products__value">Цена</td>
-                      <td class="products__field">1000 Р.</td>
-                  </tr>
-                </tbody>
-              </table>
-              <a class="products__link button" href="#">Заказать</a>
-            </li>
-            <li class="products__item">
-              <a class="products__link-image" href="#">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop1x.webp 1x, img/buckwheat-small-desktop2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet1x.webp 1x, img/buckwheat-small-tablet2x.webp 2x">
-                  <source type="image/webp" srcset="img/buckwheat-small-mobile1x.webp 1x, img/buckwheat-small-mobile2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop1x.png 1x, img/buckwheat-small-desktop2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet1x.png 1x, img/buckwheat-small-tablet2x.png 2x">
-                  <img class="products__image" src="img/buckwheat-small-mobile1x.jpg" srcset="img/buckwheat-small-mobile2x.jpg 2x" alt="Фото товара" width="140" height="144">
-                </picture>
-              </a>
-              <table class="products__table">
-                <caption class="products__caption title-description"><a href="#">Cat Energy Slim 500 г</a></caption>
-                <tbody class="products__table-list">
-                  <tr class="products__table-item">
-                    <td class="products__value">Объем</td>
-                    <td class="products__field">500 г</td>
-                  </tr>
-                  <tr class="products__table-item">
-                    <td class="products__value">Вкус</td>
-                    <td class="products__field">Гречка</td>
-                  </tr>
-                  <tr class="products__table-item">
-                    <td class="products__value">Цена</td>
-                    <td class="products__field">400 Р.</td>
-                  </tr>
-                </tbody>
-              </table>
-              <a class="products__link button" href="#">Заказать</a>
-            </li>
-            <li class="products__item">
-              <a class="products__link-image" href="#">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop1x.webp 1x, img/buckwheat-big-desktop2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet1x.webp 1x, img/buckwheat-big-tablet2x.webp 2x">
-                  <source type="image/webp" srcset="img/buckwheat-big-mobile1x.webp 1x, img/buckwheat-big-mobile2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop1x.png 1x, img/buckwheat-big-desktop2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet1x.png 1x, img/buckwheat-big-tablet2x.png 2x">
-                  <img class="products__image" src="img/buckwheat-big-mobile1x.jpg" srcset="img/buckwheat-big-mobile2x.jpg 2x" alt="Фото товара" width="140" height="144">
-                </picture>
-              </a>
-              <table class="products__table">
-                <caption class="products__caption title-description"><a href="#">Cat Energy Slim 1000 г</a></caption>
-                <tbody class="products__table-list">
-                  <tr class="products__table-item">
-                    <td class="products__value">Объем</td>
-                    <td class="products__field">1000 г</td>
-                  </tr>
-                  <tr class="products__table-item">
-                    <td class="products__value">Вкус</td>
-                    <td class="products__field">Гречка</td>
-                  </tr>
-                  <tr class="products__table-item">
-                    <td class="products__value">Цена</td>
-                    <td class="products__field">700 Р.</td>
-                  </tr>
-                </tbody>
-              </table>
-              <a class="products__link button" href="#">Заказать</a>
-            </li>
-            <li class="products__item">
-              <a class="products__link-image" href="#">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop1x.webp 1x, img/rice-small-desktop2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet1x.webp 1x, img/rice-small-tablet2x.webp 2x">
-                  <source type="image/webp" srcset="img/rice-small-mobile1x.webp 1x, img/rice-small-mobile2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/rice-small-desktop1x.png 1x, img/rice-small-desktop2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet1x.png 1x, img/rice-small-tablet2x.png 2x">
-                  <img class="products__image" src="img/rice-small-mobile1x.jpg" srcset="img/rice-small-mobile2x.jpg 2x" alt="Фото товара" width="140" height="144">
-                </picture>
-              </a>
-              <table class="products__table">
-                <caption class="products__caption title-description"><a href="#">Cat Energy Slim 500 г</a></caption>
-                <tbody class="products__table-list">
-                  <tr class="products__table-item">
-                    <td class="products__value">Объем</td>
-                    <td class="products__field">500 г</td>
-                  </tr>
-                  <tr class="products__table-item">
-                    <td class="products__value">Вкус</td>
-                    <td class="products__field">Рис</td>
-                  </tr>
-                  <tr class="products__table-item">
-                    <td class="products__value">Цена</td>
-                    <td class="products__field">500 Р.</td>
-                  </tr>
-                </tbody>
-              </table>
-              <a class="products__link button" href="#">Заказать</a>
-            </li>
-            <li class="products__item">
-              <b class="products__intro title-description">Показать еще 100500 товаров</b>
-              <p class="products__text">На самом деле вкусов гораздо больше!</p>
-              <a class=" products__link products__link--all button" href="#">Показать все</a>
-            </li>
-          </ul>
-        </section>
+                </tr>
+              </tbody>
+            </table>
+            <a class="products__link button" href="#">Заказать</a>
+          </li>
+          <li class="products__item">
+            <a class="products__link-image" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop1x.webp 1x, img/buckwheat-small-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet1x.webp 1x, img/buckwheat-small-tablet2x.webp 2x">
+                <source type="image/webp" srcset="img/buckwheat-small-mobile1x.webp 1x, img/buckwheat-small-mobile2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop1x.png 1x, img/buckwheat-small-desktop2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet1x.png 1x, img/buckwheat-small-tablet2x.png 2x">
+                <img class="products__image" src="img/buckwheat-small-mobile1x.jpg" srcset="img/buckwheat-small-mobile2x.jpg 2x" alt="Фото товара" width="140" height="144">
+              </picture>
+            </a>
+            <table class="products__table">
+              <caption class="products__caption title-description"><a href="#">Cat Energy Slim 500 г</a></caption>
+              <tbody class="products__table-list">
+                <tr class="products__table-item">
+                  <td class="products__value">Объем</td>
+                  <td class="products__field">500 г</td>
+                </tr>
+                <tr class="products__table-item">
+                  <td class="products__value">Вкус</td>
+                  <td class="products__field">Гречка</td>
+                </tr>
+                <tr class="products__table-item">
+                  <td class="products__value">Цена</td>
+                  <td class="products__field">400 Р.</td>
+                </tr>
+              </tbody>
+            </table>
+            <a class="products__link button" href="#">Заказать</a>
+          </li>
+          <li class="products__item">
+            <a class="products__link-image" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop1x.webp 1x, img/buckwheat-big-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet1x.webp 1x, img/buckwheat-big-tablet2x.webp 2x">
+                <source type="image/webp" srcset="img/buckwheat-big-mobile1x.webp 1x, img/buckwheat-big-mobile2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop1x.png 1x, img/buckwheat-big-desktop2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet1x.png 1x, img/buckwheat-big-tablet2x.png 2x">
+                <img class="products__image" src="img/buckwheat-big-mobile1x.jpg" srcset="img/buckwheat-big-mobile2x.jpg 2x" alt="Фото товара" width="140" height="144">
+              </picture>
+            </a>
+            <table class="products__table">
+              <caption class="products__caption title-description"><a href="#">Cat Energy Slim 1000 г</a></caption>
+              <tbody class="products__table-list">
+                <tr class="products__table-item">
+                  <td class="products__value">Объем</td>
+                  <td class="products__field">1000 г</td>
+                </tr>
+                <tr class="products__table-item">
+                  <td class="products__value">Вкус</td>
+                  <td class="products__field">Гречка</td>
+                </tr>
+                <tr class="products__table-item">
+                  <td class="products__value">Цена</td>
+                  <td class="products__field">700 Р.</td>
+                </tr>
+              </tbody>
+            </table>
+            <a class="products__link button" href="#">Заказать</a>
+          </li>
+          <li class="products__item">
+            <a class="products__link-image" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop1x.webp 1x, img/rice-small-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet1x.webp 1x, img/rice-small-tablet2x.webp 2x">
+                <source type="image/webp" srcset="img/rice-small-mobile1x.webp 1x, img/rice-small-mobile2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/rice-small-desktop1x.png 1x, img/rice-small-desktop2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/rice-small-tablet1x.png 1x, img/rice-small-tablet2x.png 2x">
+                <img class="products__image" src="img/rice-small-mobile1x.jpg" srcset="img/rice-small-mobile2x.jpg 2x" alt="Фото товара" width="140" height="144">
+              </picture>
+            </a>
+            <table class="products__table">
+              <caption class="products__caption title-description"><a href="#">Cat Energy Slim 500 г</a></caption>
+              <tbody class="products__table-list">
+                <tr class="products__table-item">
+                  <td class="products__value">Объем</td>
+                  <td class="products__field">500 г</td>
+                </tr>
+                <tr class="products__table-item">
+                  <td class="products__value">Вкус</td>
+                  <td class="products__field">Рис</td>
+                </tr>
+                <tr class="products__table-item">
+                  <td class="products__value">Цена</td>
+                  <td class="products__field">500 Р.</td>
+                </tr>
+              </tbody>
+            </table>
+            <a class="products__link button" href="#">Заказать</a>
+          </li>
+          <li class="products__item">
+            <b class="products__intro title-description">Показать еще 100500 товаров</b>
+            <p class="products__text">На самом деле вкусов гораздо больше!</p>
+            <a class=" products__link products__link--all button" href="#">Показать все</a>
+          </li>
+        </ul>
+      </section>
 
-        <div class="products__wrapper">
-          <div class="extra-products__title-wrapper">
-            <h2 class="extra-products__title">Дополнительные товары</h2>
-          </div>
+      <div class="products__section-wrapper">
+        <div class="extra-products__title-wrapper container container--base">
+          <h2 class="extra-products__title">Дополнительные товары</h2>
+        </div>
+        <div class="products__wrapper container">
           <section class="extra-products">
-            <ul class="extra-products__list reset">
+            <ul class="extra-products__list">
               <li class="extra-products__item">
                 <div class="extra-products__content-wrapper">
                   <a class="extra-products__item-title title-description" href="#">Сахарозаменитель</a>
@@ -314,7 +317,7 @@
             <p class="stocks__info">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
           </section>
         </div>
-    </div>
+      </div>
 
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
@@ -339,7 +342,7 @@
           </svg>
         </div>
         <div class="page-footer__social social">
-          <ul class="social__list reset">
+          <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Мы в Вконтакте">
                 <svg class="social__icon social__icon--vkontakte" width="22" height="12">
@@ -373,11 +376,10 @@
         </div>
       </div>
     </footer>
-    <script src="js/navigation.js"></script>
-    <script src="js/picturefill.js"></script>
+    <script src="js/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
-    <script src="js/map.js"></script>
+    <script src="js/script.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKSwPt7bJ8xrI76hkncI4fTTrC_2zTjJY&callback=initMap"></script>
   </body>
 </html>

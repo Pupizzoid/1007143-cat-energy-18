@@ -1,6 +1,6 @@
 .example {
   padding-top: 20px;
-  padding-bottom: 32px;
+  padding-bottom: 30px;
 
   background: $grey;
 }
@@ -63,7 +63,7 @@
 
   width: 100%;
   margin: 0;
-  margin-top: 36px;
+  margin-top: 35px;
 
   text-align: center;
   text-transform: uppercase;
@@ -101,9 +101,8 @@
 }
 
 .example__image-wrapper {
-  display: flex;
-  align-items: center;
-  width: 200%;
+  width: 100%;
+  margin-bottom: 25px;
 
   &--show {
     .example__image--after {
@@ -113,27 +112,32 @@
     .example__image--before {
       display: none;
     }
-
-    .example__cursor::after {
-      width: 70px;
-    }
   }
 }
 
+
 .example__image {
-  width: 100%;
+  width: 320px;
   height: 240px;
-  background-position-x: center;
 
   &--before {
-    background: url("../img/before-desktop1x.png") no-repeat;
+    background: url("../img/before-mobile1x.png") no-repeat;
     background-size: contain;
+    background-position: -19px -5px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/before-mobile2x.png");
+    }
   }
 
   &--after {
-    background: url("../img/after-desktop1x.png") no-repeat;
+    background: url("../img/after-mobile1x.png") no-repeat;
     background-size: contain;
     display: none;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/after-mobile2x.png");
+    }
   }
 }
 
@@ -268,21 +272,14 @@
     margin-top: 9px;
   }
 
-  .example__image-before-wrapper {
-    height: 532px;
-    width: 50%;
-  }
-
-  .example__image {
+  .example__image-wrapper {
     width: 100%;
-    height: 517px;
-    background-position-x: 16px;
+    margin-bottom: 15px;
   }
 
 
   .example__button-wrapper {
-    width: 600px;
-    margin-top: 15px;
+    width: 596px;
   }
 
 
@@ -323,10 +320,38 @@
     font-size: 20px;
   }
 
+  .example__image {
+    width: 690px;
+    height: 517px;
+    margin: 0 auto;
+
+    &--before {
+      background: url("../img/before-tablet1x.png") no-repeat;
+      background-size: contain;
+      background-position: 7px 0;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/before-tablet2x.png");
+      }
+    }
+
+    &--after {
+      background: url("../img/after-tablet1x.png") no-repeat;
+      background-size: contain;
+      display: none;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/after-tablet2x.png");
+      }
+    }
+  }
+
   .example__before,
   .example__after {
-    width: 57px;
+    width: 50px;
     padding: 0;
+
+    border-bottom: 1px dotted $grey2;
 
     font-size: 20px;
   }
@@ -386,17 +411,21 @@
 @media (min-width: $desktop-width) {
   .example {
     padding: 0;
-    padding-bottom: 75px;
+    padding-bottom: 66px;
 
     border: none;
 
     background: linear-gradient(to bottom, $white 0, $white 212px, $grey 212px, $grey 100%);
   }
 
+  .example__section-wrapper {
+    flex-wrap: nowrap;
+  }
+
   .example__title {
     width: 100%;
     margin: 0;
-    margin-bottom: 131px;
+    margin-bottom: 132px;
   }
 
   .example__text {
@@ -405,9 +434,8 @@
   }
 
   .example__description-wrapper {
-    width: 432px;
-    padding-top: 61px;
-    margin-right: auto;
+    width: 614px;
+    padding-top: 62px;
   }
 
   .example__demo {
@@ -447,7 +475,7 @@
   }
 
   .example__image {
-    background-position-x: 40px;
+    background-position-x: -6px;
     background-position-y: 21px;
     background-size: 690px;
   }
@@ -456,8 +484,8 @@
     justify-content: space-between;
 
     width: 575px;
-    margin-top: 56px;
-    margin-left: 114px;
+    margin-top: 41px;
+    margin-left: 74px;
   }
 
   .example__wrapper {

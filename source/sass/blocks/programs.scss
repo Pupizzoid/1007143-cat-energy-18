@@ -58,7 +58,7 @@
 }
 
 .programs__title {
-  margin: 6px 0 30px 71px;
+  margin: 6px 0 31px 71px;
 }
 
 .programs__description {
@@ -104,6 +104,12 @@
     width: 24px;
     height: 11px;
     background: url("../img/icon-right-arrow-long.svg") no-repeat center;
+  }
+
+  &--pro {
+    &::after {
+      left: 95px;
+    }
   }
 }
 
@@ -176,6 +182,12 @@
     &::after {
       top: 5px;
       left: 131px;
+    }
+
+    &--pro {
+      &::after {
+        left: 124px;
+      }
     }
   }
 }
