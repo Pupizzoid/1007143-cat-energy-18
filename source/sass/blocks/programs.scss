@@ -59,7 +59,9 @@
 }
 
 .programs__title {
-  margin: 6px 0 31px 71px;
+  margin: 6px 0 31px 0;
+  width: 100%;
+  padding-left: 70px;
 }
 
 .programs__description {
@@ -164,6 +166,7 @@
     width: 100%;
     margin: 0;
     margin-bottom: 26px;
+    padding: 0;
   }
 
   .programs__description {
@@ -238,8 +241,8 @@
   }
 
   .programs__title {
-    margin-left: 161px;
     margin-bottom: 74px;
+    padding-left: 161px;
   }
 
   .programs__description {
