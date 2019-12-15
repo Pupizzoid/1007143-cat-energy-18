@@ -1,9 +1,7 @@
-// import { url } from "inspector";
-
 // Карта
 
 var map;
-var image = url("img/map-pin.png");
+var image = url("../img/map-pin.png");
 var lat;
 var lng;
 
