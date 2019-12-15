@@ -25,6 +25,8 @@
 .copyright__text {
   align-self: center;
 
+  display: inline-block;
+
   color: $brown;
 
   font-family: "ArialMT", sans-serif;
@@ -34,6 +36,14 @@
 @media (min-width: $tablet-width) {
   .copyright {
     width: 164px;
+  }
+
+  .copyright__text {
+    margin-bottom: 5px;
+  }
+
+  .copyright__icon {
+    margin-top: -3px;
   }
 }
 

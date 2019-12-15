@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
 
-  padding: 28px 6px 28px 0;
+  padding: 28px 0;
 }
 
 .contacts__promo {
@@ -77,9 +77,9 @@
 
   .contacts__address {
     display: inline-block;
-    vertical-align: auto;
 
     margin-bottom: 19px;
+    width: 152px;
 
     text-align: right;
   }
@@ -113,7 +113,7 @@
     left: 40px;
 
     width: 570px;
-    padding: 59px 89px 57px 76px;
+    padding: 67px 89px 57px 76px;
 
     background: $white;
   }
