@@ -109,9 +109,18 @@
   opacity: 1;
 }
 
+.extra__field:disabled + .extra__value::before {
+  outline: 1px solid $grey-disabled;
+}
+
+.extra__field:disabled + .extra__value {
+  opacity: 0.3;
+}
+
 .extra__field:focus ~ .extra__value::before {
   outline: 1px solid grey;
 }
+
 
 .extra__list {
   display: flex;

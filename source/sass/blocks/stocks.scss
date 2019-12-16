@@ -7,7 +7,10 @@
   width: 100%;
   padding: 65px 61px 41px 61px;
 
-  background: url("../img/gift-photo-mobile1x.jpg") no-repeat center;
+  background-color: $green;
+  background-image: url("../img/gift-photo-mobile1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 
   @media (min-resolution: $retina-dppx) {
@@ -16,7 +19,7 @@
 }
 
 .stocks__image {
-  margin-bottom: 64px;
+  margin-bottom: 62px;
 }
 
 .stocks__info {
@@ -27,7 +30,7 @@
 
   color: $white;
 
-  font-family: "ArialMT", sans-serif;
+  font-family: "ArialMT", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -39,7 +42,7 @@
 
     width: 100%;
     margin: 0;
-    padding: 66px 125px 72px 91px;
+    padding: 64px 104px 72px 91px;
 
     background: url("../img/gift-photo-tablet1x.jpg") no-repeat center;
     background-size: cover;
@@ -51,6 +54,13 @@
 
   .stocks__image {
     margin: 0;
+  }
+
+  .stocks__info {
+    padding-top: 4px;
+    width: 180px;
+
+    text-align: left;
   }
 }
 
@@ -68,5 +78,9 @@
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-desktop2x.jpg");
     }
+  }
+
+  .stocks__info {
+    text-align: center;
   }
 }

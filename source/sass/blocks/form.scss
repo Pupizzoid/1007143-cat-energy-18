@@ -74,7 +74,7 @@
 
   color: $brown;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
 
   &:hover {
@@ -203,6 +203,14 @@
   outline: 1px solid grey;
 }
 
+.form__program-field:disabled + .form__program-value::before {
+  outline: 1px solid $grey-disabled;
+}
+
+.form__program-field:disabled + .form__program-value {
+  opacity: 0.3;
+}
+
 .form__contacts {
   position: relative;
 
@@ -281,7 +289,7 @@
 
   color: $brown;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
 
   &:hover {
@@ -338,7 +346,7 @@
 
   color: $brown;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .form__button-wrapper {
@@ -357,7 +365,7 @@
 
   color: $brown;
 
-  font-family: "ArialMT", sans-serif;
+  font-family: "ArialMT", "Arial", sans-serif;
   font-size: 14px;
   line-height: 10px;
 }

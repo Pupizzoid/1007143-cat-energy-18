@@ -26,12 +26,12 @@
 }
 
 .contacts__text {
-  width: 134px;
+  width: 139px;
   margin: 0;
 
   color: $brown;
 
-  font-family: "ArialMT", sans-serif;
+  font-family: "ArialMT", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
@@ -50,7 +50,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts__details {
-    padding: 66px 41px 57px 41px;
+    padding: 65px 41px 57px 41px;
   }
 
   .contacts__promo {
