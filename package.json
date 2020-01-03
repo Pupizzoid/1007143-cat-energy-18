@@ -3,7 +3,7 @@
   "version": "17.0.0",
   "private": true,
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
-  "homepage": "https://Pupizzoid.github.io/1007143-cat-energy-18",
+  "homepage": "https://Pupizzoid.github.io/cat-energy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",

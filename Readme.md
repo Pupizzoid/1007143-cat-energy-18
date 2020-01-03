@@ -1,4 +1,4 @@
-https://pupizzoid.github.io/1007143-cat-energy-18/
+https://pupizzoid.github.io/1007143-cat-energy-18/git 
 
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
