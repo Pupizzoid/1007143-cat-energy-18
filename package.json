@@ -3,6 +3,7 @@
   "version": "17.0.0",
   "private": true,
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "homepage": "https://Pupizzoid.github.io/1007143-cat-energy-18",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
@@ -29,6 +30,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
+    "deploy": "gh-pages -d build",
     "build": "gulp build",
     "start": "gulp start"
   },
